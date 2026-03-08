@@ -14,7 +14,7 @@
           >Resume</RouterLink
         >
     </div>
-    <div class="flex flex-col space-y-2 w-full">
+    <div class="flex flex-col space-y-2 w-full border-b border-[#4a4a4a] pb-4 mb-4">
 
             <h1 class="text-[#FFFFFF] text-lg p-4">Projects</h1>
       
@@ -26,7 +26,7 @@
         <RouterLink
           to="/studybuddy"
           class="text-[#FFFFFF] p-4 rounded-lg hover:bg-[#333333] transition-colors"
-          >StudyBuddy</RouterLink
+          >Study Buddy</RouterLink
         >
                 <RouterLink
           to="/stockly"
@@ -34,7 +34,15 @@
           >Stockly</RouterLink
         >
     </div>
+ <div class="flex flex-col space-y-2 w-full">
+      
+        <RouterLink
+          to="/yumzy"
+          class="text-[#FFFFFF] p-4 rounded-lg hover:bg-[#333333] transition-colors"
+          >Contact me</RouterLink
+        >
 
+    </div>
   </nav>
 </template>
 
