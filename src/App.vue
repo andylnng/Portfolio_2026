@@ -1,8 +1,12 @@
-<script setup lang="ts"></script>
-
 <template>
-  <h1 class="text-2xl">You did it!</h1>
-
+<div class="bg-[#222222] min-h-screen flex">
+    <SideNav />
+    <main class="flex-1 overflow-auto">
+        <RouterView />
+    </main>
+</div>
 </template>
 
-<style scoped></style>
+<script setup lang="ts">
+import SideNav from './components/sidenav.vue'
+</script>
