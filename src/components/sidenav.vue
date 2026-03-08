@@ -1,23 +1,14 @@
 <template>
-    <nav class="w-64 bg-white h-screen p-4">
-        <ul>
-            <li class="mb-4">
-                <RouterLink to="/" class="text-gray-800 hover:text-gray-600 transition-colors" :class="{'font-bold text-blue-600': route.path === '/'}">Home</RouterLink>
-            </li>
-            <li class="mb-4">
-                <RouterLink to="/about" class="text-gray-800 hover:text-gray-600 transition-colors" :class="{'font-bold text-blue-600': route.path === '/about'}">About</RouterLink>
-            </li>
-            <li class="mb-4">
-                <RouterLink to="/projects" class="text-gray-800 hover:text-gray-600 transition-colors" :class="{'font-bold text-blue-600': route.path === '/projects'}">Projects</RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/contact" class="text-gray-800 hover:text-gray-600 transition-colors" :class="{'font-bold text-blue-600': route.path === '/contact'}">Contact</RouterLink>
-            </li>
-        </ul>
+    <nav class="w-96 bg-[#272727] p-8 rounded-3xl m-6">
+        <div class="flex flex-col space-y-2 w-full">
+                <RouterLink to="/" class="text-[#FFFFFF] p-4 rounded-lg hover:bg-[#333333] transition-colors">Home</RouterLink>
+                <RouterLink to="/about" class="text-[#FFFFFF] p-4 rounded-lg hover:bg-[#333333] transition-colors" >About</RouterLink>
+                <RouterLink to="/projects" class="text-[#FFFFFF] p-4 rounded-lg hover:bg-[#333333] transition-colors" >Projects</RouterLink>
+                <RouterLink to="/contact" class="text-[#FFFFFF] p-4 rounded-lg hover:bg-[#333333] transition-colors">Contact</RouterLink>
+        </div> 
     </nav>
 </template>
 
 <script lang="ts" setup>
-import { useRoute } from 'vue-router'
-const route = useRoute()
+
 </script>
