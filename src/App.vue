@@ -1,12 +1,12 @@
 <template>
-<div class="bg-[#222222] min-h-screen flex">
+  <div class="bg-[#222222] min-h-screen p-6 flex">
     <SideNav />
     <main class="flex-1 overflow-auto">
-        <RouterView />
+      <RouterView />
     </main>
-</div>
+  </div>
 </template>
 
 <script setup lang="ts">
-import SideNav from './components/sidenav.vue'
+import SideNav from "./components/sidenav.vue";
 </script>
