@@ -48,17 +48,28 @@
     <div class="grid grid-cols-3 text-[#FFFFFF] gap-5 mt-12">
       <div class="space-y-2">
         <h3>Technologies</h3>
-        <h5>html</h5>
-        <h5>html</h5>
-        <h5>html</h5>
-        <h5>html</h5>
-        <h5>html</h5>
+        <h5>HTML</h5>
+        <h5>CSS</h5>
+        <h5>Tailwindcss</h5>
+        <h5>JavaScript</h5>
+        <h5>TypeScript</h5>
+        <h5>Java</h5>
+        <h5>Vue</h5>
+        <h5>React</h5>
+        <h5>SQL</h5>
       </div>
-      <div>
+      <div class="space-y-2">
         <h3>Tools</h3>
+        <h5>Figma</h5>
+        <h5>Github Desktop</h5>
+        <h5>VS Code</h5>
+        <h5>Postman</h5>
       </div>
-      <div>
+      <div class="space-y-2">
         <h3>Skills</h3>
+        <h5>Responsive design</h5>
+        <h5>Prototyping</h5>
+        <h5>Design thinking</h5>
       </div>
     </div>
   </div>

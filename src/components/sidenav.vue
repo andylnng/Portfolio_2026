@@ -1,5 +1,5 @@
 <template>
-  <nav class="w-84 bg-[#272727] p-8 rounded-3xl">
+  <nav class="w-84 bg-[#272727] overflow-y-auto p-8 rounded-3xl">
     <div
       class="flex flex-col space-y-2 w-full border-b border-[#4a4a4a] pb-4 mb-4"
     >
