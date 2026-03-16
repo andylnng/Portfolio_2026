@@ -9,6 +9,7 @@
     <main class="relative min-h-screen overflow-auto p-12 pb-36 md:pb-40">
       <RouterView />
       <AboutWidget />
+      <AppGrid />
     </main>
     <Dock />
   </div>
@@ -17,4 +18,5 @@
 <script setup lang="ts">
 import Dock from "./components/Dock.vue";
 import AboutWidget from "./components/about-widget.vue";
+import AppGrid from "./components/AppGrid.vue";
 </script>

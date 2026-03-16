@@ -20,7 +20,7 @@
           </span>
 
           <span
-            class="flex h-14 w-14 items-center justify-center rounded-[1.25rem] border border-white/10 bg-linear-to-b from-white/18 to-white/6 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_10px_25px_rgba(0,0,0,0.35)] transition-colors duration-200 group-hover:from-white/22 group-hover:to-white/10"
+            class="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-linear-to-b from-white/18 to-white/6 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_10px_25px_rgba(0,0,0,0.35)] transition-colors duration-200 group-hover:from-white/22 group-hover:to-white/10"
             :class="{
               'ring-1 ring-white/20 from-[#4f8cff]/80 to-[#2563eb]/70 text-white':
                 isActive(item.to),
@@ -35,7 +35,14 @@
 </template>
 
 <script lang="ts" setup>
-import { FileText, Folder, User, Mail, type LucideIcon } from "lucide-vue-next";
+import {
+  FileText,
+  Folder,
+  User,
+  Mail,
+  ForkKnife,
+  type LucideIcon,
+} from "lucide-vue-next";
 import { useRoute } from "vue-router";
 
 type DockItem = {
@@ -49,8 +56,13 @@ const route = useRoute();
 const dockItems: DockItem[] = [
   { label: "About Me", to: "/about", icon: User },
   { label: "Resume", to: "/resume", icon: FileText },
-  { label: "Projects", to: "/projects", icon: Folder },
   { label: "Contact", to: "/contact", icon: Mail },
+  { label: "Yumzy", to: "/yumzy", icon: ForkKnife },
+  { label: "Studybuddy", to: "/studybuddy", icon: FileText },
+  { label: "Stockly", to: "/stockly", icon: Folder },
+  { label: "NotETS", to: "/notETS", icon: Mail },
+  { label: "Github", to: "/stockly", icon: Folder },
+  { label: "Linkedin", to: "/notETS", icon: Mail },
 ];
 
 const isActive = (path: string) => route.path === path;
