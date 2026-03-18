@@ -7,11 +7,12 @@
     >
       <div class="flex items-end gap-2 md:gap-3">
         <RouterLink
-          v-for="item in dockItems"
+          v-for="(item, index) in dockItems"
           :key="item.to"
           :to="item.to"
           :aria-label="item.label"
-          class="group relative flex flex-col items-center justify-end outline-none"
+          class="group relative flex-col items-center justify-end outline-none"
+          :class="index < 4 ? 'flex' : 'hidden md:flex'"
         >
           <span
             class="pointer-events-none absolute -top-10 whitespace-nowrap rounded-xl border border-white/10 bg-black/70 px-2.5 py-1 text-xs font-medium text-white opacity-0 shadow-lg transition-all duration-200 group-hover:-translate-y-1 group-hover:opacity-100"
