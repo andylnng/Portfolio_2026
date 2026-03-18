@@ -1,10 +1,10 @@
 <template>
   <Transition
     enter-active-class="transition duration-300 ease-out"
-    enter-from-class="translate-x-12 opacity-0"
+    enter-from-class="translate-y-12 opacity-0"
     leave-active-class="transition duration-200 ease-in"
-    leave-from-class="translate-x-0 opacity-100"
-    leave-to-class="translate-x-12 opacity-0"
+    leave-from-class="translate-y-0 opacity-100"
+    leave-to-class="translate-y-12 opacity-0"
   >
     <div v-if="open && project" class="fixed inset-0 z-40">
       <button
@@ -15,7 +15,7 @@
       />
 
       <section
-        class="absolute right-0 top-0 w-full h-5/6 border-l rounded-xl border-white/10 bg-black/35 backdrop-blur-2xl md:w-205 mt-6 mr-6 mb-36"
+        class="absolute right-0 top-0 w-full border-l rounded-xl border-white/10 bg-black/35 backdrop-blur-2xl md:w-205 mt-6 mr-6 mb-36"
       >
         <header
           class="flex items-center gap-3 border-b rounded-t-xl border-white/10 bg-white/8 px-4 py-3"
