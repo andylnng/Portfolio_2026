@@ -6,10 +6,17 @@
     "
   >
     <div class="absolute inset-0" />
-    <main class="relative min-h-screen overflow-auto p-12 pb-36 md:pb-40">
-      <RouterView />
-      <AboutWidget />
-      <AppGrid />
+    <main class="relative overflow-auto p-6 pb-36 md:pb-40">
+      <div class="grid items-start gap-8 md:grid-cols-11">
+        <section class="md:col-span-6">
+          <AboutWidget />
+        </section>
+
+        <section class="md:col-span-5">
+          <RouterView />
+          <AppGrid />
+        </section>
+      </div>
     </main>
     <Dock />
   </div>
@@ -17,6 +24,8 @@
 
 <script setup lang="ts">
 import Dock from "./components/Dock.vue";
-import AboutWidget from "./components/about-widget.vue";
+import AboutWidget from "./components/AboutWidget.vue";
 import AppGrid from "./components/AppGrid.vue";
+import EducationStatusWidget from "./components/EducationStatusWidget.vue";
+import SkillsWidget from "./components/SkillsWidget.vue";
 </script>
