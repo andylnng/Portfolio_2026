@@ -14,12 +14,11 @@
         </section>
 
         <section class="md:col-span-5">
-          <RouterView />
           <AppGrid />
         </section>
       </div>
     </main>
-    <Dock />
+    <!-- <Dock /> -->
   </div>
 </template>
 
@@ -27,8 +26,6 @@
 import Dock from "./components/Dock.vue";
 import AboutWidget from "./components/AboutWidget.vue";
 import AppGrid from "./components/AppGrid.vue";
-import EducationStatusWidget from "./components/EducationStatusWidget.vue";
-import SkillsWidget from "./components/SkillsWidget.vue";
 import MenuBar from "./components/MenuBar.vue";
 
 import { ref, onMounted, onUnmounted } from "vue";
@@ -36,7 +33,7 @@ import { ref, onMounted, onUnmounted } from "vue";
 const currentTime = ref(
   new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
 );
-let timer;
+let timer: number;
 
 onMounted(() => {
   timer = setInterval(() => {
