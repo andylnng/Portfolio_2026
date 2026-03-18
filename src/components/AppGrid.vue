@@ -1,29 +1,27 @@
 <template>
   <div class="grid grid-cols-4 md:grid-cols-5 gap-2 md:gap-4 w-full">
-    <RouterLink
+    <div
       v-for="app in applicationsList"
-      :key="app.to"
-      :to="app.to"
       :aria-label="app.label"
       class="group relative flex flex-col items-center justify-end outline-none"
       @click="openProjectWindow(app, $event)"
     >
       <span
         class="flex h-14 w-14 items-center justify-center overflow-hidden rounded-xl border border-white/10 text-white transition-all duration-200 group-hover:-translate-y-1 group-hover:opacity-100"
-        :class="app.bgClass"
       >
         <img
           v-if="app.imageUrl"
           :src="app.imageUrl"
           :alt="`${app.label} icon`"
-          class="h-full w-full object-cover"
+          class="h-full w-full"
+          :class="app.imageClass ?? 'object-cover'"
         />
         <span v-else class="text-sm font-semibold tracking-wide text-white/95">
           {{ app.shortLabel }}
         </span>
       </span>
       <h3 class="mt-2 text-sm text-white">{{ app.label }}</h3>
-    </RouterLink>
+    </div>
   </div>
 
   <ProjectWindowModal
@@ -38,10 +36,9 @@ import ProjectWindowModal, { type ProjectData } from "./ProjectWindowModal.vue";
 
 type Application = {
   label: string;
-  to: string;
-  bgClass: string;
   shortLabel: string;
   imageUrl?: string;
+  imageClass?: string;
   project?: ProjectData;
 };
 
@@ -63,20 +60,15 @@ const closeProjectWindow = () => {
 const applicationsList: Application[] = [
   {
     label: "About Me",
-    to: "/resume",
-    bgClass: "bg-sky-500",
     shortLabel: "AM",
   },
   {
     label: "Contact",
-    to: "/contact",
-    bgClass: "bg-emerald-500",
     shortLabel: "CT",
+    imageUrl: "/public/apple-mail.svg",
   },
   {
-    label: "Yumzy",
-    to: "/yumzy",
-    bgClass: "bg-amber-500",
+    label: "yumzy",
     shortLabel: "YZ",
     imageUrl: "https://picsum.photos/seed/yumzy/120/120",
     project: {
@@ -96,10 +88,9 @@ const applicationsList: Application[] = [
   },
   {
     label: "Studybuddy",
-    to: "/studybuddy",
-    bgClass: "bg-indigo-500",
     shortLabel: "SB",
-    imageUrl: "https://picsum.photos/seed/studybuddy/120/120",
+    imageUrl: "/public/studybuddy.png",
+    imageClass: "object-contain scale-150",
     project: {
       title: "Studybuddy",
       description:
@@ -116,10 +107,16 @@ const applicationsList: Application[] = [
     },
   },
   {
+    label: "NotETS",
+    shortLabel: "NE",
+    imageUrl: "/public/notETS.png",
+    imageClass: "object-contain scale-200",
+  },
+  {
     label: "Stockly",
-    to: "/stockly",
-    bgClass: "bg-fuchsia-500",
     shortLabel: "SK",
+    imageUrl: "/public/stockly.png",
+    imageClass: "object-contain scale-150",
     project: {
       title: "Stockly",
       description: "Inventory dashboard focused on speed and simple workflows.",
@@ -135,16 +132,10 @@ const applicationsList: Application[] = [
     },
   },
   {
-    label: "NotETS",
-    to: "/notETS",
-    bgClass: "bg-rose-500",
-    shortLabel: "NE",
-  },
-  {
     label: "AL-V1",
-    to: "/al-v1",
-    bgClass: "bg-cyan-500",
     shortLabel: "AL",
+    imageUrl: "/public/AL.png",
+    imageClass: "object-contain scale-down-50",
   },
 ];
 </script>
