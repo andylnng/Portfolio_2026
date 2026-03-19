@@ -15,7 +15,7 @@
       />
 
       <section
-        class="absolute right-0 top-0 w-full border-l rounded-xl border-white/10 bg-black/35 backdrop-blur-2xl md:w-205 mt-6 mr-6 mb-36"
+        class="absolute w-full border-l rounded-xl border-white/10 bg-black/35 backdrop-blur-2xl md:w-205 mt-6 mr-6 mb-36"
       >
         <header
           class="flex items-center gap-3 border-b rounded-t-xl border-white/10 bg-white/8 px-4 py-3"
