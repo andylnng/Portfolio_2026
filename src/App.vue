@@ -27,26 +27,31 @@
 
 <script setup lang="ts">
 import Dock from "./components/Dock.vue";
-import AboutWidget from "./components/AboutWidget.vue";
+import AboutWidget from "./components/widgets/AboutWidget.vue";
 import AppGrid from "./components/AppGrid.vue";
-import MenuBar from "./components/MenuBar.vue";
-import GitCommitWidget from "./components/GitCommitWidget.vue";
-import CurrentProject from "./components/CurrentProjectWidget.vue";
-import GoalWidget from "./components/GoalWidget.vue";
+import MenuBar from "./components/menubar/MenuBar.vue";
+import GitCommitWidget from "./components/widgets/GitCommitWidget.vue";
+import CurrentProject from "./components/widgets/CurrentProjectWidget.vue";
+import GoalWidget from "./components/widgets/GoalWidget.vue";
 
 import { ref, onMounted, onUnmounted } from "vue";
 
-const currentTime = ref(
-  new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
-);
+const formatCurrentTime = (date: Date) =>
+  date
+    .toLocaleTimeString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+    })
+    .replace(/\./g, "")
+    .toLowerCase();
+
+const currentTime = ref(formatCurrentTime(new Date()));
 let timer: number;
 
 onMounted(() => {
   timer = setInterval(() => {
-    currentTime.value = new Date().toLocaleTimeString([], {
-      hour: "2-digit",
-      minute: "2-digit",
-    });
+    currentTime.value = formatCurrentTime(new Date());
   }, 1000);
   console.log(timer);
 });
