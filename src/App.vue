@@ -31,8 +31,7 @@ import AboutWidget from "./components/AboutWidget.vue";
 import AppGrid from "./components/AppGrid.vue";
 import MenuBar from "./components/MenuBar.vue";
 import GitCommitWidget from "./components/GitCommitWidget.vue";
-import CurrentProject from "./components/CurrentProject.vue";
-import FunFactWidget from "./components/FunFactWidget.vue";
+import CurrentProject from "./components/CurrentProjectWidget.vue";
 import GoalWidget from "./components/GoalWidget.vue";
 
 import { ref, onMounted, onUnmounted } from "vue";
