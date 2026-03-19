@@ -1,4 +1,18 @@
 <template>
+  <ContactWindowModal
+    :open="activeModal === 'contact'"
+    @close="activeModal = null"
+  />
+  <FilesWindowModal
+    :open="activeModal === 'files'"
+    @close="activeModal = null"
+  />
+  <MessageWindowModal
+    :open="activeModal === 'messages'"
+    @close="activeModal = null"
+  />
+  <MailWindowModal :open="activeModal === 'mail'" @close="activeModal = null" />
+
   <nav
     class="fixed inset-x-0 bottom-5 z-50 flex justify-center px-4 pointer-events-none"
   >
@@ -8,6 +22,7 @@
       <div class="flex items-end gap-2 md:gap-3">
         <div
           v-for="(item, index) in dockItems"
+          :key="item.label"
           :aria-label="item.label"
           class="group relative flex-col items-center justify-end outline-none"
           :class="index < 4 ? 'flex' : 'hidden md:flex'"
@@ -18,7 +33,10 @@
             {{ item.label }}
           </span>
 
-          <span
+          <button
+            type="button"
+            :aria-label="`Open ${item.label}`"
+            @click="openDockItem(item)"
             class="flex h-14 w-14 items-center justify-center overflow-hidden rounded-xl text-white transition-all duration-200 group-hover:-translate-y-0.5"
           >
             <img
@@ -33,7 +51,7 @@
             >
               {{ item.shortLabel }}
             </span>
-          </span>
+          </button>
         </div>
       </div>
     </div>
@@ -41,44 +59,61 @@
 </template>
 
 <script lang="ts" setup>
-import { useRoute } from "vue-router";
+import { ref } from "vue";
+import ContactWindowModal from "./modals/ContactWindowModal.vue";
+import FilesWindowModal from "./modals/FilesWindowModal.vue";
+import MessageWindowModal from "./modals/MessageWindowModal.vue";
+import MailWindowModal from "./modals/MailWindowModal.vue";
+import Resume from "./Resume.vue";
+
+type DockModal = "contact" | "files" | "messages" | "mail" | "resume" | null;
 
 type DockItem = {
   label: string;
   shortLabel: string;
   imageUrl?: string;
   imageClass?: string;
+  modal?: DockModal;
 };
 
-const route = useRoute();
+const activeModal = ref<DockModal>(null);
+
+const openDockItem = (item: DockItem) => {
+  if (item.modal) {
+    activeModal.value = item.modal;
+  }
+};
 
 const dockItems: DockItem[] = [
   {
     label: "Files",
     shortLabel: "AM",
     imageUrl: "/public/assets/folder.png",
+    modal: "files",
   },
   {
     label: "Contacts",
     shortLabel: "AM",
     imageUrl: "/public/assets/contacts.png",
+    modal: "contact",
   },
   {
     label: "Messages",
     shortLabel: "AM",
     imageUrl: "/public/assets/message.png",
+    modal: "messages",
   },
   {
     label: "Resume",
     shortLabel: "AM",
     imageUrl: "/public/assets/resume.png",
+    modal: "resume",
   },
   {
     label: "Mail",
     shortLabel: "AM",
     imageUrl: "/public/assets/apple-mail.svg",
+    modal: "mail",
   },
 ];
-
-const isActive = (path: string) => route.path === path;
 </script>
