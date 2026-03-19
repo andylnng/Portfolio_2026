@@ -15,7 +15,7 @@
       />
 
       <section
-        class="absolute w-full border-l rounded-xl border-white/10 bg-black/35 backdrop-blur-2xl md:w-205 mt-6 mr-6 mb-36"
+        class="absolute left-6 top-8 bottom-36 w-full border-l rounded-xl border-white/10 bg-black/90 backdrop-blur-2xl md:mr-6 md:w-200"
       >
         <header
           class="flex items-center gap-3 border-b rounded-t-xl border-white/10 bg-white/8 px-4 py-3"
@@ -24,34 +24,38 @@
             class="h-3 w-3 rounded-full bg-red-500"
             @click="emit('close')"
           />
-          <span class="h-3 w-3 rounded-full bg-yellow-400" />
-          <span class="h-3 w-3 rounded-full bg-green-500" />
-          <p class="ml-2 text-sm font-medium text-white/85">
-            {{ project.title }}
-          </p>
+          <button class="h-3 w-3 rounded-full bg-yellow-400" />
+          <button class="h-3 w-3 rounded-full bg-green-500" />
         </header>
 
-        <div class="grid h-[calc(100%-56px)] md:grid-cols-[260px_1fr]">
-          <aside class="border-r border-white/10 p-4 text-white/90">
-            <p class="text-xs uppercase tracking-wide text-white/60">Details</p>
-            <p class="mt-2 text-sm">{{ project.description }}</p>
+        <div class="grid h-[calc(100%-56px)] min-h-0 md:grid-cols-[260px_1fr]">
+          <aside
+            class="border-r border-white/10 p-6 text-white/90 overflow-auto min-h-0 flex flex-col"
+          >
+            <div
+              class="shrink-0 mb-6 flex items-center justify-center rounded-lg bg-white/5"
+            >
+              <img
+                :src="project.imageUrl"
+                :alt="project.title"
+                class="object-contain rounded-2xl"
+              />
+            </div>
 
-            <p class="mt-5 text-xs uppercase tracking-wide text-white/60">
+            <p class="text-xs uppercase tracking-wide text-white/60">
               Tech Stack
             </p>
-            <div class="mt-2 flex flex-wrap gap-2">
+            <div class="mt-2 mb-6 flex flex-col gap-2">
               <span
                 v-for="tech in project.techStack"
                 :key="tech"
-                class="rounded-full border border-white/15 bg-white/10 px-2.5 py-1 text-xs"
+                class="rounded-full text-sm"
               >
                 {{ tech }}
               </span>
             </div>
 
-            <p class="mt-5 text-xs uppercase tracking-wide text-white/60">
-              Links
-            </p>
+            <p class="text-xs uppercase tracking-wide text-white/60">Links</p>
             <div class="mt-2 flex flex-col gap-2 text-sm">
               <a
                 v-for="link in project.links"
@@ -59,22 +63,27 @@
                 :href="link.url"
                 target="_blank"
                 rel="noreferrer"
-                class="text-white underline underline-offset-4"
+                class="text-white underline underline-offset-4 hover:text-white/80"
               >
                 {{ link.label }}
               </a>
             </div>
           </aside>
 
-          <main class="overflow-auto p-4">
-            <div class="grid gap-3 sm:grid-cols-2">
-              <img
-                v-for="shot in project.screenshots"
-                :key="shot"
-                :src="shot"
-                :alt="`${project.title} screenshot`"
-                class="h-44 w-full rounded-xl border border-white/10 object-cover"
-              />
+          <main class="overflow-y-auto min-h-0 p-6 text-white/90">
+            <h1 class="text-4xl mb-6 font-semibold">{{ project.title }}</h1>
+            <div class="space-y-6">
+              <p class="text-sm leading-relaxed">
+                {{ project.description }}
+              </p>
+              <h1 class="text-xl font-semibold">Problem</h1>
+              <p class="text-sm leading-relaxed">
+                {{ project.problem }}
+              </p>
+              <h1 class="text-xl font-semibold">Goal</h1>
+              <p class="text-sm leading-relaxed">
+                {{ project.goal }}
+              </p>
             </div>
           </main>
         </div>
@@ -92,9 +101,12 @@ export type ProjectLink = {
 export type ProjectData = {
   title: string;
   description: string;
+  problem: string;
+  goal: string;
   techStack: string[];
   links: ProjectLink[];
   screenshots: string[];
+  imageUrl?: string;
 };
 
 defineProps<{
