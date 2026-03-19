@@ -32,7 +32,9 @@
 </template>
 <script setup lang="ts">
 import { ref } from "vue";
-import ProjectWindowModal, { type ProjectData } from "./ProjectWindowModal.vue";
+import ProjectWindowModal, {
+  type ProjectData,
+} from "./modals/ProjectWindowModal.vue";
 
 type Application = {
   label: string;
