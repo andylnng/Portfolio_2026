@@ -6,7 +6,7 @@
       class="group relative flex flex-col items-center justify-end outline-none"
       @click="openProjectWindow(app, $event)"
     >
-      <span
+      <button
         class="flex h-16 w-16 items-center justify-center overflow-hidden rounded-xl border border-white/10 text-white transition-all duration-200 group-hover:-translate-y-1 group-hover:opacity-100"
       >
         <img
@@ -19,7 +19,7 @@
         <span v-else class="text-sm font-semibold tracking-wide text-white/95">
           {{ app.shortLabel }}
         </span>
-      </span>
+      </button>
       <h3 class="mt-2 text-sm text-white">{{ app.label }}</h3>
     </div>
   </div>
