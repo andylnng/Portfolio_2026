@@ -7,7 +7,7 @@
       @click="openProjectWindow(app, $event)"
     >
       <span
-        class="flex h-14 w-14 items-center justify-center overflow-hidden rounded-xl border border-white/10 text-white transition-all duration-200 group-hover:-translate-y-1 group-hover:opacity-100"
+        class="flex h-16 w-16 items-center justify-center overflow-hidden rounded-xl border border-white/10 text-white transition-all duration-200 group-hover:-translate-y-1 group-hover:opacity-100"
       >
         <img
           v-if="app.imageUrl"
@@ -59,18 +59,10 @@ const closeProjectWindow = () => {
 
 const applicationsList: Application[] = [
   {
-    label: "About Me",
-    shortLabel: "AM",
-  },
-  {
-    label: "Contact",
-    shortLabel: "CT",
-    imageUrl: "/public/apple-mail.svg",
-  },
-  {
-    label: "yumzy",
+    label: "Mealio",
     shortLabel: "YZ",
-    imageUrl: "https://picsum.photos/seed/yumzy/120/120",
+    imageUrl: "/public/mealio.png",
+    imageClass: "object-contain scale-150",
     project: {
       title: "Yumzy",
       description:
@@ -136,6 +128,18 @@ const applicationsList: Application[] = [
     shortLabel: "AL",
     imageUrl: "/public/AL.png",
     imageClass: "object-contain scale-down-50",
+  },
+  {
+    label: "Resume",
+    shortLabel: "AM",
+    imageUrl: "/public/notes.png",
+    imageClass: "object-cover scale-155",
+  },
+  {
+    label: "Contact",
+    shortLabel: "CT",
+    imageUrl: "/public/apple-mail.svg",
+    imageClass: "object-cover scale-125",
   },
 ];
 </script>
