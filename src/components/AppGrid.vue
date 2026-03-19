@@ -63,7 +63,7 @@ const applicationsList: Application[] = [
   {
     label: "Mealio",
     shortLabel: "YZ",
-    imageUrl: "/public/mealio.png",
+    imageUrl: "/public/assets/mealio.png",
     imageClass: "object-contain scale-150",
     project: {
       title: "Mealio",
@@ -87,7 +87,7 @@ const applicationsList: Application[] = [
   {
     label: "Studybuddy",
     shortLabel: "SB",
-    imageUrl: "/public/studybuddy.png",
+    imageUrl: "/public/assets/studybuddy.png",
     imageClass: "object-contain scale-150",
     project: {
       title: "Studybuddy",
@@ -111,7 +111,7 @@ const applicationsList: Application[] = [
   {
     label: "NotETS",
     shortLabel: "NE",
-    imageUrl: "/public/notETS.png",
+    imageUrl: "/public/assets/notETS.png",
     imageClass: "object-contain scale-200",
     project: {
       title: "NotETS",
@@ -129,13 +129,13 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/studybuddy-shot-1/800/500",
         "https://picsum.photos/seed/studybuddy-shot-2/800/500",
       ],
-      imageUrl: "/public/notETS.png",
+      imageUrl: "/public/assets/notETS.png",
     },
   },
   {
     label: "Stockly",
     shortLabel: "SK",
-    imageUrl: "/public/stockly.png",
+    imageUrl: "/public/assets/stockly.png",
     imageClass: "object-contain scale-150",
     project: {
       title: "Stockly",
@@ -153,13 +153,13 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/stockly-shot-1/800/500",
         "https://picsum.photos/seed/stockly-shot-2/800/500",
       ],
-      imageUrl: "/public/stockly.png",
+      imageUrl: "/public/assets/stockly.png",
     },
   },
   {
     label: "AL-V1",
     shortLabel: "AL",
-    imageUrl: "/public/AL.png",
+    imageUrl: "/public/assets/AL.png",
     imageClass: "object-contain scale-down-50",
     project: {
       title: "Andy Luong V1",
@@ -177,7 +177,7 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/studybuddy-shot-1/800/500",
         "https://picsum.photos/seed/studybuddy-shot-2/800/500",
       ],
-      imageUrl: "/public/AL.png",
+      imageUrl: "/public/assets/AL.png",
     },
   },
 ];

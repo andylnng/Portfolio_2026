@@ -2,7 +2,11 @@
   <div
     class="group relative inline-flex justify-center items-center gap-3 rounded-5xl"
   >
-    <img src="/notETS.png" alt="NotETS" class="rounded-2xl object-cover" />
+    <img
+      src="/assets/notETS.png"
+      alt="NotETS"
+      class="rounded-2xl object-cover"
+    />
 
     <span
       class="absolute top-5 left-3 right-3 w-full inline-flex items-center gap-2 text-sm text-black"

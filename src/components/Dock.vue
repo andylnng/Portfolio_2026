@@ -56,27 +56,27 @@ const dockItems: DockItem[] = [
   {
     label: "Files",
     shortLabel: "AM",
-    imageUrl: "/public/folder.png",
+    imageUrl: "/public/assets/folder.png",
   },
   {
     label: "Contacts",
     shortLabel: "AM",
-    imageUrl: "/public/contacts.png",
+    imageUrl: "/public/assets/contacts.png",
   },
   {
     label: "Messages",
     shortLabel: "AM",
-    imageUrl: "/public/message.png",
+    imageUrl: "/public/assets/message.png",
   },
   {
     label: "Resume",
     shortLabel: "AM",
-    imageUrl: "/public/resume.png",
+    imageUrl: "/public/assets/resume.png",
   },
   {
     label: "Mail",
     shortLabel: "AM",
-    imageUrl: "/public/apple-mail.svg",
+    imageUrl: "/public/assets/apple-mail.svg",
   },
 ];
 
