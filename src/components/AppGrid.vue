@@ -81,7 +81,7 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/yumzy-shot-1/800/500",
         "https://picsum.photos/seed/yumzy-shot-2/800/500",
       ],
-      imageUrl: "/public/mealio.png",
+      imageUrl: "/public/assets/mealio.png",
     },
   },
   {
@@ -105,7 +105,7 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/studybuddy-shot-1/800/500",
         "https://picsum.photos/seed/studybuddy-shot-2/800/500",
       ],
-      imageUrl: "/public/studybuddy.png",
+      imageUrl: "/public/assets/studybuddy.png",
     },
   },
   {
