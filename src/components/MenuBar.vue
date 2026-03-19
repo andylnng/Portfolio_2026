@@ -4,9 +4,10 @@
       class="text-white flex justify-between items-center font-light text-sm"
     >
       <div class="flex gap-4">
-        <h1>Preference</h1>
+        <h1 class="font-bold">Finder</h1>
         <h2>File</h2>
-        <h2>test</h2>
+        <h2>Edit</h2>
+        <h2>View</h2>
       </div>
 
       <div>{{ currentTime }}</div>
