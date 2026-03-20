@@ -4,7 +4,6 @@
     style="background-image: url(martin-martz-W0NRebXbsjM-unsplash.jpg)"
   >
     <MenuBar :current-time="currentTime" />
-    <div class="absolute inset-0" />
     <main class="relative overflow-auto p-6 pb-36 md:pb-40">
       <div class="grid items-start gap-8 md:grid-cols-11">
         <section class="md:col-span-6">

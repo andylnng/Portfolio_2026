@@ -64,7 +64,6 @@ import ContactWindowModal from "./modals/ContactWindowModal.vue";
 import FilesWindowModal from "./modals/FilesWindowModal.vue";
 import MessageWindowModal from "./modals/MessageWindowModal.vue";
 import MailWindowModal from "./modals/MailWindowModal.vue";
-import Resume from "./Resume.vue";
 
 type DockModal = "contact" | "files" | "messages" | "mail" | "resume" | null;
 
@@ -88,31 +87,25 @@ const dockItems: DockItem[] = [
   {
     label: "Files",
     shortLabel: "AM",
-    imageUrl: "/public/assets/folder.png",
+    imageUrl: "/public/folder.png",
     modal: "files",
   },
   {
     label: "Contacts",
     shortLabel: "AM",
-    imageUrl: "/public/assets/contacts.png",
+    imageUrl: "/public/contacts.png",
     modal: "contact",
   },
   {
-    label: "Messages",
+    label: "Notes",
     shortLabel: "AM",
-    imageUrl: "/public/assets/message.png",
+    imageUrl: "/public/notes.png",
     modal: "messages",
-  },
-  {
-    label: "Resume",
-    shortLabel: "AM",
-    imageUrl: "/public/assets/resume.png",
-    modal: "resume",
   },
   {
     label: "Mail",
     shortLabel: "AM",
-    imageUrl: "/public/assets/apple-mail.svg",
+    imageUrl: "/public/apple-mail.svg",
     modal: "mail",
   },
 ];

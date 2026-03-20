@@ -7,7 +7,7 @@
       @click="openProjectWindow(app, $event)"
     >
       <button
-        class="flex h-16 w-16 items-center justify-center overflow-hidden rounded-xl border border-white/10 text-white transition-all duration-200 group-hover:-translate-y-1 group-hover:opacity-100"
+        class="flex h-16 w-16 items-center justify-center overflow-hidden rounded-xl text-white transition-all duration-200 group-hover:-translate-y-1 group-hover:opacity-100"
       >
         <img
           v-if="app.imageUrl"
@@ -63,7 +63,7 @@ const applicationsList: Application[] = [
   {
     label: "Mealio",
     shortLabel: "YZ",
-    imageUrl: "/public/assets/mealio.png",
+    imageUrl: "/public/mealio.png",
     imageClass: "object-contain scale-150",
     project: {
       title: "Mealio",
@@ -81,13 +81,13 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/yumzy-shot-1/800/500",
         "https://picsum.photos/seed/yumzy-shot-2/800/500",
       ],
-      imageUrl: "/public/assets/mealio.png",
+      imageUrl: "/public/mealio.png",
     },
   },
   {
     label: "Studybuddy",
     shortLabel: "SB",
-    imageUrl: "/public/assets/studybuddy.png",
+    imageUrl: "/public/studybuddy.png",
     imageClass: "object-contain scale-150",
     project: {
       title: "Studybuddy",
@@ -105,13 +105,13 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/studybuddy-shot-1/800/500",
         "https://picsum.photos/seed/studybuddy-shot-2/800/500",
       ],
-      imageUrl: "/public/assets/studybuddy.png",
+      imageUrl: "/public/studybuddy.png",
     },
   },
   {
     label: "NotETS",
     shortLabel: "NE",
-    imageUrl: "/public/assets/notETS.png",
+    imageUrl: "/public/notETS.png",
     imageClass: "object-contain scale-200",
     project: {
       title: "NotETS",
@@ -129,13 +129,13 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/studybuddy-shot-1/800/500",
         "https://picsum.photos/seed/studybuddy-shot-2/800/500",
       ],
-      imageUrl: "/public/assets/notETS.png",
+      imageUrl: "/public/notETS.png",
     },
   },
   {
     label: "Stockly",
     shortLabel: "SK",
-    imageUrl: "/public/assets/stockly.png",
+    imageUrl: "/public/stockly.png",
     imageClass: "object-contain scale-150",
     project: {
       title: "Stockly",
@@ -153,13 +153,13 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/stockly-shot-1/800/500",
         "https://picsum.photos/seed/stockly-shot-2/800/500",
       ],
-      imageUrl: "/public/assets/stockly.png",
+      imageUrl: "/public/stockly.png",
     },
   },
   {
     label: "AL-V1",
     shortLabel: "AL",
-    imageUrl: "/public/assets/AL.png",
+    imageUrl: "/public/AL.png",
     imageClass: "object-contain scale-down-50",
     project: {
       title: "Andy Luong V1",
@@ -177,7 +177,7 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/studybuddy-shot-1/800/500",
         "https://picsum.photos/seed/studybuddy-shot-2/800/500",
       ],
-      imageUrl: "/public/assets/AL.png",
+      imageUrl: "/public/AL.png",
     },
   },
 ];

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="rounded-2xl border border-white/10 bg-black/10 p-5 backdrop-blur-3xl"
+    class="rounded-2xl border border-white/10 bg-black/30 p-5 backdrop-blur-3xl"
   >
     <div
       class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/20 px-3 py-1.5"
