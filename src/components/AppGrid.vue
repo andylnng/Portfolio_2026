@@ -42,11 +42,18 @@ type Application = {
   imageUrl?: string;
   imageClass?: string;
   project?: ProjectData;
+  externalUrl?: string;
 };
 
 const activeProject = ref<ProjectData | null>(null);
 
 const openProjectWindow = (app: Application, event: MouseEvent) => {
+  if (app.externalUrl) {
+    event.preventDefault();
+    window.open(app.externalUrl, "_blank", "noopener,noreferrer");
+    return;
+  }
+
   if (!app.project) {
     return;
   }
@@ -179,6 +186,13 @@ const applicationsList: Application[] = [
       ],
       imageUrl: "/AL.png",
     },
+  },
+  {
+    label: "Resume",
+    shortLabel: "CV",
+    imageUrl: "/resume.png",
+    imageClass: "object-contain scale-110",
+    externalUrl: "/CV_2026_EN.pdf",
   },
 ];
 </script>
