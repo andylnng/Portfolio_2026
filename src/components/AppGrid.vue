@@ -170,7 +170,7 @@ const applicationsList: Application[] = [
       goal: "To create a user-friendly platform that helps students organize their study time and monitor their academic progress.",
       techStack: ["React", "Tailwindcss", "Javascript"],
       links: [
-        { label: "Live website", url: "https://andyluong.com" },
+        { label: "Live website", url: "https://v1.andyluong.com" },
         { label: "GitHub", url: "https://github.com" },
       ],
       screenshots: [
