@@ -63,7 +63,7 @@ const applicationsList: Application[] = [
   {
     label: "Mealio",
     shortLabel: "YZ",
-    imageUrl: "/mealio.png",
+    imageUrl: "/Mealio.png",
     imageClass: "object-contain scale-150",
     project: {
       title: "Mealio",
@@ -81,13 +81,13 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/yumzy-shot-1/800/500",
         "https://picsum.photos/seed/yumzy-shot-2/800/500",
       ],
-      imageUrl: "/mealio.png",
+      imageUrl: "/Mealio.png",
     },
   },
   {
     label: "Studybuddy",
     shortLabel: "SB",
-    imageUrl: "/studybuddy.png",
+    imageUrl: "/Studybuddy.png",
     imageClass: "object-contain scale-150",
     project: {
       title: "Studybuddy",
@@ -105,7 +105,7 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/studybuddy-shot-1/800/500",
         "https://picsum.photos/seed/studybuddy-shot-2/800/500",
       ],
-      imageUrl: "/studybuddy.png",
+      imageUrl: "/Studybuddy.png",
     },
   },
   {
