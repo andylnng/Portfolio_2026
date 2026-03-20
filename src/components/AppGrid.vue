@@ -63,7 +63,7 @@ const applicationsList: Application[] = [
   {
     label: "Mealio",
     shortLabel: "YZ",
-    imageUrl: "/public/mealio.png",
+    imageUrl: "/mealio.png",
     imageClass: "object-contain scale-150",
     project: {
       title: "Mealio",
@@ -81,13 +81,13 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/yumzy-shot-1/800/500",
         "https://picsum.photos/seed/yumzy-shot-2/800/500",
       ],
-      imageUrl: "/public/mealio.png",
+      imageUrl: "/mealio.png",
     },
   },
   {
     label: "Studybuddy",
     shortLabel: "SB",
-    imageUrl: "/public/studybuddy.png",
+    imageUrl: "/studybuddy.png",
     imageClass: "object-contain scale-150",
     project: {
       title: "Studybuddy",
@@ -105,7 +105,7 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/studybuddy-shot-1/800/500",
         "https://picsum.photos/seed/studybuddy-shot-2/800/500",
       ],
-      imageUrl: "/public/studybuddy.png",
+      imageUrl: "/studybuddy.png",
     },
   },
   {
@@ -129,13 +129,13 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/studybuddy-shot-1/800/500",
         "https://picsum.photos/seed/studybuddy-shot-2/800/500",
       ],
-      imageUrl: "/public/notETS.png",
+      imageUrl: "/notETS.png",
     },
   },
   {
     label: "Stockly",
     shortLabel: "SK",
-    imageUrl: "/public/stockly.png",
+    imageUrl: "/stockly.png",
     imageClass: "object-contain scale-150",
     project: {
       title: "Stockly",
@@ -153,7 +153,7 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/stockly-shot-1/800/500",
         "https://picsum.photos/seed/stockly-shot-2/800/500",
       ],
-      imageUrl: "/public/stockly.png",
+      imageUrl: "/stockly.png",
     },
   },
   {
@@ -177,7 +177,7 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/studybuddy-shot-1/800/500",
         "https://picsum.photos/seed/studybuddy-shot-2/800/500",
       ],
-      imageUrl: "/public/AL.png",
+      imageUrl: "/AL.png",
     },
   },
 ];
