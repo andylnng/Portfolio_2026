@@ -87,7 +87,7 @@ const applicationsList: Application[] = [
   {
     label: "Studybuddy",
     shortLabel: "SB",
-    imageUrl: "/Studybuddy.png",
+    imageUrl: "/StudyBuddy.png",
     imageClass: "object-contain scale-150",
     project: {
       title: "Studybuddy",
@@ -105,7 +105,7 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/studybuddy-shot-1/800/500",
         "https://picsum.photos/seed/studybuddy-shot-2/800/500",
       ],
-      imageUrl: "/Studybuddy.png",
+      imageUrl: "/StudyBuddy.png",
     },
   },
   {
