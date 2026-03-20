@@ -111,7 +111,7 @@ const applicationsList: Application[] = [
   {
     label: "NotETS",
     shortLabel: "NE",
-    imageUrl: "/public/notETS.png",
+    imageUrl: "/notETS.png",
     imageClass: "object-contain scale-200",
     project: {
       title: "NotETS",
@@ -159,7 +159,7 @@ const applicationsList: Application[] = [
   {
     label: "AL-V1",
     shortLabel: "AL",
-    imageUrl: "/public/AL.png",
+    imageUrl: "/AL.png",
     imageClass: "object-contain scale-down-50",
     project: {
       title: "Andy Luong V1",
