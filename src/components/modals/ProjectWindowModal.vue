@@ -17,16 +17,10 @@
       <section
         class="absolute left-6 top-8 bottom-28 w-full border-l rounded-xl border-white/10 bg-black/90 backdrop-blur-2xl md:mr-6 md:w-200"
       >
-        <header
-          class="flex items-center gap-3 border-b rounded-t-xl border-white/10 bg-white/8 px-4 py-3"
-        >
-          <button
-            class="h-3 w-3 rounded-full bg-red-500"
-            @click="emit('close')"
-          />
-          <button class="h-3 w-3 rounded-full bg-yellow-400" />
-          <button class="h-3 w-3 rounded-full bg-green-500" />
-        </header>
+        <ModalWindowHeader
+          header-class="flex items-center gap-3 border-b rounded-t-xl border-white/10 bg-white/8 px-4 py-3"
+          @close="emit('close')"
+        />
 
         <div class="grid h-[calc(100%-56px)] min-h-0 md:grid-cols-[260px_1fr]">
           <aside
@@ -93,6 +87,8 @@
 </template>
 
 <script setup lang="ts">
+import ModalWindowHeader from "./TitleBar.vue";
+
 export type ProjectLink = {
   label: string;
   url: string;

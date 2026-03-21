@@ -17,18 +17,7 @@
       <section
         class="absolute left-8 top-10 bottom-36 w-full rounded-xl border border-white/10 bg-black/85 backdrop-blur-2xl md:w-lg"
       >
-        <header
-          class="flex items-center gap-3 border-b border-white/10 bg-white/8 px-4 py-3"
-        >
-          <button
-            type="button"
-            class="h-3 w-3 rounded-full bg-red-500"
-            @click="emit('close')"
-          />
-          <button type="button" class="h-3 w-3 rounded-full bg-yellow-400" />
-          <button type="button" class="h-3 w-3 rounded-full bg-green-500" />
-          <p class="ml-2 text-sm font-medium text-white/85">Messages</p>
-        </header>
+        <ModalWindowHeader title="Messages" @close="emit('close')" />
 
         <main class="h-[calc(100%-52px)] overflow-y-auto p-6 text-white/90">
           <div class="space-y-3 text-sm">
@@ -52,6 +41,8 @@
 </template>
 
 <script setup lang="ts">
+import ModalWindowHeader from "./TitleBar.vue";
+
 defineProps<{
   open: boolean;
 }>();

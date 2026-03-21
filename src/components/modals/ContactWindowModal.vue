@@ -17,17 +17,10 @@
       <section
         class="absolute left-1/2 top-16 h-[min(70vh,540px)] w-[min(94vw,980px)] -translate-x-1/2 rounded-2xl border border-white/10 bg-[#1f1f22]/95 shadow-[0_18px_50px_rgba(0,0,0,0.45)] backdrop-blur-2xl"
       >
-        <header
-          class="flex items-center gap-3 border-b border-white/10 bg-white/5 px-4 py-2.5"
-        >
-          <button
-            type="button"
-            class="h-3 w-3 rounded-full bg-red-500"
-            @click="emit('close')"
-          />
-          <button type="button" class="h-3 w-3 rounded-full bg-yellow-400" />
-          <button type="button" class="h-3 w-3 rounded-full bg-green-500" />
-        </header>
+        <ModalWindowHeader
+          header-class="flex items-center gap-3 border-b border-white/10 bg-white/5 px-4 py-2.5"
+          @close="emit('close')"
+        />
 
         <main
           class="grid h-[calc(100%-46px)] grid-cols-1 md:grid-cols-[280px_1fr]"
@@ -131,6 +124,7 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 import { Search } from "lucide-vue-next";
+import ModalWindowHeader from "./TitleBar.vue";
 
 type Contact = {
   name: string;
