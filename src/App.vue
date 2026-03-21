@@ -8,7 +8,7 @@
       <div class="grid items-start gap-8 md:grid-cols-11">
         <section class="md:col-span-6">
           <AboutWidget />
-          <div class="grid grid-cols-3 mt-6 gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 mt-6 gap-6">
             <GitCommitWidget owner="andylnng" repo="Portfolio_2026" />
             <CurrentProject />
             <GoalWidget />

@@ -16,9 +16,6 @@
           class="h-full w-full"
           :class="app.imageClass ?? 'object-cover'"
         />
-        <span v-else class="text-sm font-semibold tracking-wide text-white/95">
-          {{ app.shortLabel }}
-        </span>
       </button>
       <h3 class="mt-2 text-sm text-white">{{ app.label }}</h3>
     </div>
@@ -38,7 +35,6 @@ import ProjectWindowModal, {
 
 type Application = {
   label: string;
-  shortLabel: string;
   imageUrl?: string;
   imageClass?: string;
   project?: ProjectData;
@@ -69,7 +65,6 @@ const closeProjectWindow = () => {
 const applicationsList: Application[] = [
   {
     label: "Mealio",
-    shortLabel: "YZ",
     imageUrl: "/Mealio.png",
     imageClass: "object-contain scale-150",
     project: {
@@ -93,7 +88,6 @@ const applicationsList: Application[] = [
   },
   {
     label: "Studybuddy",
-    shortLabel: "SB",
     imageUrl: "/StudyBuddy.png",
     imageClass: "object-contain scale-150",
     project: {
@@ -117,7 +111,6 @@ const applicationsList: Application[] = [
   },
   {
     label: "NotETS",
-    shortLabel: "NE",
     imageUrl: "/notETS.png",
     imageClass: "object-contain scale-200",
     project: {
@@ -141,7 +134,6 @@ const applicationsList: Application[] = [
   },
   {
     label: "Stockly",
-    shortLabel: "SK",
     imageUrl: "/stockly.png",
     imageClass: "object-contain scale-150",
     project: {
@@ -165,7 +157,6 @@ const applicationsList: Application[] = [
   },
   {
     label: "AL-V1",
-    shortLabel: "AL",
     imageUrl: "/AL.png",
     imageClass: "object-contain scale-down-50",
     project: {
@@ -188,8 +179,13 @@ const applicationsList: Application[] = [
     },
   },
   {
-    label: "Resume",
-    shortLabel: "CV",
+    label: "Resume EN",
+    imageUrl: "/resume.png",
+    imageClass: "object-contain scale-110",
+    externalUrl: "/CV_2026_EN.pdf",
+  },
+  {
+    label: "Resume FR",
     imageUrl: "/resume.png",
     imageClass: "object-contain scale-110",
     externalUrl: "/CV_2026_EN.pdf",
