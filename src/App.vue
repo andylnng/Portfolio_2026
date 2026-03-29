@@ -1,39 +1,65 @@
 <template>
   <div
-    class="relative min-h-screen bg-cover bg-center bg-no-repeat"
-    style="background-image: url(martin-martz-W0NRebXbsjM-unsplash.jpg)"
+    class="relative min-h-screen bg-linear-to-br from-slate-900 via-slate-800 to-slate-900"
   >
     <MenuBar :current-time="currentTime" />
     <main class="relative overflow-auto p-6 pb-36 md:pb-40">
       <div class="grid items-start gap-8 md:grid-cols-11">
         <section class="md:col-span-6">
-          <AboutWidget />
+          <SkeletonLoader v-if="loading.about" />
+          <Transition name="fade-up">
+            <div v-if="!loading.about">
+              <AboutWidget />
+            </div>
+          </Transition>
+
           <div class="grid grid-cols-1 md:grid-cols-3 mt-6 gap-6">
-            <GitCommitWidget owner="andylnng" repo="Portfolio_2026" />
-            <CurrentProject />
-            <GoalWidget />
+            <SkeletonLoader v-if="loading.goal" />
+            <Transition name="fade-up">
+              <div v-if="!loading.goal">
+                <GoalWidget />
+              </div>
+            </Transition>
+
+            <SkeletonLoader v-if="loading.gitCommit" />
+            <Transition name="fade-up">
+              <div v-if="!loading.gitCommit">
+                <GitCommitWidget owner="andylnng" repo="Portfolio_2026" />
+              </div>
+            </Transition>
+
+            <SkeletonLoader v-if="loading.currentProject" />
+            <Transition name="fade-up">
+              <div v-if="!loading.currentProject">
+                <CurrentProject />
+              </div>
+            </Transition>
           </div>
         </section>
 
         <section class="md:col-span-5">
-          <AppGrid />
+          <SkeletonLoader v-if="loading.grid" variant="grid" :count="10" />
+          <Transition name="fade-right">
+            <div v-if="!loading.grid">
+              <AppGrid />
+            </div>
+          </Transition>
         </section>
       </div>
     </main>
-    <Dock />
   </div>
 </template>
 
 <script setup lang="ts">
-import Dock from "./components/Dock.vue";
 import AboutWidget from "./components/widgets/AboutWidget.vue";
 import AppGrid from "./components/AppGrid.vue";
 import MenuBar from "./components/menubar/MenuBar.vue";
 import GitCommitWidget from "./components/widgets/GitCommitWidget.vue";
 import CurrentProject from "./components/widgets/CurrentProjectWidget.vue";
 import GoalWidget from "./components/widgets/GoalWidget.vue";
+import SkeletonLoader from "./components/SkeletonLoader.vue";
 
-import { ref, onMounted, onUnmounted } from "vue";
+import { reactive, ref, onMounted, onUnmounted } from "vue";
 
 const formatCurrentTime = (date: Date) =>
   date
@@ -47,11 +73,35 @@ const formatCurrentTime = (date: Date) =>
 
 const currentTime = ref(formatCurrentTime(new Date()));
 let timer: number;
+const loading = reactive({
+  about: true,
+  goal: true,
+  gitCommit: true,
+  currentProject: true,
+  grid: true,
+});
 
 onMounted(() => {
   timer = setInterval(() => {
     currentTime.value = formatCurrentTime(new Date());
   }, 1000);
+
+  setTimeout(() => {
+    loading.about = false;
+  }, 220);
+  setTimeout(() => {
+    loading.goal = false;
+  }, 340);
+  setTimeout(() => {
+    loading.gitCommit = false;
+  }, 440);
+  setTimeout(() => {
+    loading.currentProject = false;
+  }, 540);
+  setTimeout(() => {
+    loading.grid = false;
+  }, 640);
+
   console.log(timer);
 });
 
@@ -59,3 +109,22 @@ onUnmounted(() => {
   clearInterval(timer);
 });
 </script>
+
+<style scoped>
+.fade-up-enter-active,
+.fade-right-enter-active {
+  transition:
+    opacity 0.24s ease,
+    transform 0.24s ease;
+}
+
+.fade-up-enter-from {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.fade-right-enter-from {
+  opacity: 0;
+  transform: translateX(8px);
+}
+</style>
