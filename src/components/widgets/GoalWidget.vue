@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-black/30 backdrop-blur-3xl border border-white/10 p-6 rounded-2xl w-full"
+    class="h-60 w-full rounded-2xl border border-white/10 bg-black/30 p-6 backdrop-blur-3xl"
   >
     <h2 class="flex text-white text-md mb-3">2027 Goals</h2>
     <ul class="space-y-1 text-white/80">

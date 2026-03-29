@@ -1,11 +1,11 @@
 <template>
   <div
-    class="group relative inline-flex justify-center items-center gap-3 rounded-5xl"
+    class="group relative flex h-60 w-full items-center justify-center overflow-hidden rounded-2xl border border-white/10"
   >
-    <img src="/notETS.png" alt="NotETS" class="rounded-2xl object-cover" />
+    <img src="/notETS.png" alt="NotETS" class="h-full w-full object-cover" />
 
     <span
-      class="absolute top-5 left-3 right-3 w-full inline-flex items-center gap-2 text-sm text-black"
+      class="absolute left-3 right-3 top-5 inline-flex items-center gap-2 text-sm text-black"
     >
       <span class="relative flex h-2.5 w-2.5">
         <span
