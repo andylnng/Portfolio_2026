@@ -17,7 +17,7 @@
       <section
         class="absolute left-6 top-8 bottom-28 w-full border-l rounded-xl border-white/10 bg-black/90 backdrop-blur-2xl md:mr-6 md:w-200"
       >
-        <ModalWindowHeader
+        <TitleBar
           header-class="flex items-center gap-3 border-b rounded-t-xl border-white/10 bg-white/8 px-4 py-3"
           @close="emit('close')"
         />
@@ -35,6 +35,12 @@
                 class="object-contain rounded-2xl"
               />
             </div>
+            <p class="text-xs uppercase tracking-wide text-white/60">Status</p>
+            <div class="mt-2 mb-6 flex flex-col gap-2">
+              <span class="text-sm">
+                {{ project.status }}
+              </span>
+            </div>
 
             <p class="text-xs uppercase tracking-wide text-white/60">
               Tech Stack
@@ -43,7 +49,7 @@
               <span
                 v-for="tech in project.techStack"
                 :key="tech"
-                class="rounded-full text-sm"
+                class="text-sm"
               >
                 {{ tech }}
               </span>
@@ -67,15 +73,15 @@
           <main class="overflow-y-auto min-h-0 p-6 text-white/90">
             <h1 class="text-4xl mb-6 font-semibold">{{ project.title }}</h1>
             <div class="space-y-6">
-              <p class="text-sm leading-relaxed">
+              <p class="text-md leading-relaxed">
                 {{ project.description }}
               </p>
               <h1 class="text-xl font-semibold">Problem</h1>
-              <p class="text-sm leading-relaxed">
+              <p class="text-md leading-relaxed">
                 {{ project.problem }}
               </p>
               <h1 class="text-xl font-semibold">Goal</h1>
-              <p class="text-sm leading-relaxed">
+              <p class="text-md leading-relaxed">
                 {{ project.goal }}
               </p>
             </div>
@@ -87,7 +93,7 @@
 </template>
 
 <script setup lang="ts">
-import ModalWindowHeader from "./TitleBar.vue";
+import TitleBar from "./TitleBar.vue";
 
 export type ProjectLink = {
   label: string;
@@ -99,6 +105,7 @@ export type ProjectData = {
   description: string;
   problem: string;
   goal: string;
+  status: string;
   techStack: string[];
   links: ProjectLink[];
   screenshots: string[];

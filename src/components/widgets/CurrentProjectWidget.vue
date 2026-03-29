@@ -15,11 +15,11 @@
           class="relative inline-flex h-2.5 w-2.5 rounded-full bg-amber-300"
         />
       </span>
-      Working on
+      Coding...
     </span>
 
     <span
-      class="pointer-events-none absolute inset-x-0 bottom-4 text-center text-base font-semibold tracking-wide text-gray-400 opacity-0 translate-y-2 transition duration-200 group-hover:translate-y-0 group-hover:opacity-100"
+      class="pointer-events-none absolute inset-x-0 bottom-4 text-center text-base font-semibold tracking-wide text-gray-800 opacity-0 translate-y-2 transition duration-200 group-hover:translate-y-0 group-hover:opacity-100"
     >
       NotETS
     </span>

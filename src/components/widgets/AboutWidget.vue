@@ -1,10 +1,8 @@
 <template>
   <div
-    class="bg-black/10 backdrop-blur-3xl border border-white/10 p-6 rounded-2xl w-full"
+    class="bg-black/30 backdrop-blur-3xl border border-white/10 p-6 rounded-2xl w-full"
   >
-    <div
-      class="inline-flex items-center gap-2 mb-4 rounded-full bg-white/20 px-3 py-1.5 border border-white/20"
-    >
+    <div class="inline-flex items-center gap-2 mb-4">
       <span class="relative flex h-2.5 w-2.5">
         <span
           class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"

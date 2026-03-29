@@ -74,6 +74,7 @@ const applicationsList: Application[] = [
       problem:
         "Users struggle to find healthy and diverse meal options that fit their dietary preferences.",
       goal: "To create a user-friendly platform that simplifies the process of discovering and ordering nutritious meals.",
+      status: "In construction",
       techStack: ["Vue", "TypeScript", "Tailwind", "Firebase"],
       links: [
         { label: "Live Demo", url: "https://example.com/yumzy" },
@@ -97,6 +98,7 @@ const applicationsList: Application[] = [
       problem:
         "Students often struggle with managing their study schedules and tracking their progress effectively.",
       goal: "To create a user-friendly platform that helps students organize their study time and monitor their academic progress.",
+      status: "In construction",
       techStack: ["Vue", "Pinia", "TypeScript", "Tailwind"],
       links: [
         { label: "Case Study", url: "https://example.com/studybuddy" },
@@ -120,6 +122,7 @@ const applicationsList: Application[] = [
       problem:
         "Students often struggle with managing their study schedules and tracking their progress effectively.",
       goal: "To create a user-friendly platform that helps students organize their study time and monitor their academic progress.",
+      status: "In construction",
       techStack: ["Vue", "Pinia", "TypeScript", "Tailwind"],
       links: [
         { label: "Case Study", url: "https://example.com/studybuddy" },
@@ -143,6 +146,7 @@ const applicationsList: Application[] = [
       problem:
         "Students often struggle with managing their study schedules and tracking their progress effectively.",
       goal: "To create a user-friendly platform that helps students organize their study time and monitor their academic progress.",
+      status: "In construction",
       techStack: ["Vue", "TypeScript", "Tailwind", "Supabase"],
       links: [
         { label: "Live App", url: "https://example.com/stockly" },
@@ -156,6 +160,32 @@ const applicationsList: Application[] = [
     },
   },
   {
+    label: "Brainwave",
+    imageUrl: "/brainwave.png",
+    imageClass: "object-contain scale-down-50",
+    project: {
+      title: "Brainwave",
+      description:
+        "Collaborative study planner with reminders and progress tracking.",
+      problem:
+        "Students often struggle with managing their study schedules and tracking their progress effectively.",
+      goal: "To create a user-friendly platform that helps students organize their study time and monitor their academic progress.",
+      status: "Live",
+      techStack: ["React", "Tailwindcss", "Javascript"],
+      links: [
+        {
+          label: "Live website",
+          url: "https://brainwave-liard-six.vercel.app/",
+        },
+      ],
+      screenshots: [
+        "https://picsum.photos/seed/studybuddy-shot-1/800/500",
+        "https://picsum.photos/seed/studybuddy-shot-2/800/500",
+      ],
+      imageUrl: "/brainwave.png",
+    },
+  },
+  {
     label: "AL-V1",
     imageUrl: "/AL.png",
     imageClass: "object-contain scale-down-50",
@@ -166,6 +196,7 @@ const applicationsList: Application[] = [
       problem:
         "Students often struggle with managing their study schedules and tracking their progress effectively.",
       goal: "To create a user-friendly platform that helps students organize their study time and monitor their academic progress.",
+      status: "Live",
       techStack: ["React", "Tailwindcss", "Javascript"],
       links: [
         { label: "Live website", url: "https://v1.andyluong.com" },
