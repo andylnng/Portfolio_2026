@@ -24,8 +24,8 @@
         <label class="font-bold"
           >Front-end developer and UX/UI enthusiast</label
         >
-        with experience in creating modern web applications. I enjoy solving
-        complex problems and building intuitive user experiences.
+        with experience in creating modern web applications. I enjoy working at
+        the intersection of design and engineering.
       </p>
     </div>
     <div class="mt-6">
