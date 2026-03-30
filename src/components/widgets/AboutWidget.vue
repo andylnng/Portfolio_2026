@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-black/30 backdrop-blur-3xl border border-white/10 p-6 rounded-2xl w-full"
+    class="relative bg-black/30 backdrop-blur-3xl border border-white/10 p-6 rounded-2xl w-full"
   >
     <div class="inline-flex items-center gap-2 mb-4">
       <span class="relative flex h-2.5 w-2.5">
@@ -12,18 +12,14 @@
         />
       </span>
       <span class="text-xs font-light tracking-wide text-white"
-        >Available for work</span
+        >Available for internship</span
       >
     </div>
     <h2 class="text-3xl text-white mb-4">Hi, i'm Andy.</h2>
-    <div>
-      <p class="text-gray-200 mb-2">
-        I'm a passionate
-        <label class="font-bold"
-          >Front-end developer and UX/UI enthusiast</label
-        >
-        with experience in creating modern web applications. I enjoy working at
-        the intersection of design and engineering.
+    <div class="text-gray-200">
+      <p class="mb-2">
+        Computer science student at ETS building apps that live at the
+        intersection of clean UI and real engineering.
       </p>
     </div>
     <div class="mt-6">
@@ -47,10 +43,20 @@
           >
           <ArrowUpRight class="inline-block ml-1 mb-1 w-3 h-3 text-gray-300" />
         </div>
+        <div>
+          <a
+            href="mailto:andy.luong.1@ens.etsmtl.ca"
+            target="_blank"
+            class="text-white underline underline-offset-4"
+            >Contact Me</a
+          >
+          <ArrowUpRight class="inline-block ml-1 mb-1 w-3 h-3 text-gray-300" />
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
+import { ref } from "vue";
 import { ArrowUpRight } from "lucide-vue-next";
 </script>
