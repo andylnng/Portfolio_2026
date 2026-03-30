@@ -12,14 +12,31 @@
         />
       </span>
       <span class="text-xs font-light tracking-wide text-white"
-        >Available for internship</span
+        >Available for internship · Fall 2026</span
       >
     </div>
-    <h2 class="text-3xl text-white mb-4">Hi, i'm Andy.</h2>
-    <div class="text-gray-200">
-      <p class="mb-2">
-        Computer science student at ETS building apps that live at the
-        intersection of clean UI and real engineering.
+    <div class="mb-4">
+      <h2 class="text-3xl text-white mb-1">Hi, i'm Andy.</h2>
+    </div>
+    <div class="text-white/90">
+      <p class="mb-4">
+        Third year Software engineering student at
+        <label class="text-white font-semibold">ÉTS</label> based in Montreal
+        who builds things outside the classroom web apps, tools, and interfaces
+        where design and code meet. Previously interned at
+        <label class="text-white font-semibold">Safran Landing Systems</label>
+        2025.
+      </p>
+      <p class="mb-2 text-md">
+        Currently working on
+        <a
+          href="https://notets.app"
+          target="_blank"
+          class="text-white font-semibold"
+          >notETS</a
+        >
+        a platform for students to share their course notes and possibly making
+        money from it.
       </p>
     </div>
     <div class="mt-6">

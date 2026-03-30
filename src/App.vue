@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="relative min-h-screen bg-linear-to-br from-slate-900 via-slate-800 to-slate-900"
-  >
+  <div class="app-background relative min-h-screen">
     <MenuBar :current-time="currentTime" />
     <main class="relative overflow-auto p-6 pb-36 md:pb-40">
       <div class="grid items-start gap-8 md:grid-cols-11">
@@ -111,6 +109,13 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+.app-background {
+  background-image: url("/martin-martz-W0NRebXbsjM-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .fade-up-enter-active,
 .fade-right-enter-active {
   transition:

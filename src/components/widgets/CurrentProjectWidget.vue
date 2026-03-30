@@ -28,7 +28,7 @@
     <span
       class="pointer-events-none absolute inset-x-0 bottom-4 text-center text-base font-semibold tracking-wide text-gray-800 opacity-0 translate-y-2 transition duration-200 group-hover:translate-y-0 group-hover:opacity-100"
     >
-      NotETS
+      notETS
     </span>
   </div>
 </template>
