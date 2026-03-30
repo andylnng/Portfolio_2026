@@ -1,13 +1,11 @@
 <template>
-  <div class="bg-black/20 w-full p-1 px-6">
+  <div class="bg-black/20 py-2 px-6">
     <div
       class="text-white flex justify-between items-center font-light text-sm"
     >
       <div class="flex gap-4">
-        <h1 class="font-bold">Finder</h1>
-        <h2>File</h2>
-        <h2>Edit</h2>
-        <h2>View</h2>
+        <h2>Tech Stack</h2>
+        <h2>Experience</h2>
       </div>
 
       <div>{{ currentTime }}</div>
