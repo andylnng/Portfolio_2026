@@ -15,7 +15,14 @@
           class="relative inline-flex h-2.5 w-2.5 rounded-full bg-amber-300"
         />
       </span>
-      Coding...
+      <span class="inline-flex items-end">
+        Coding
+        <span class="ml-0.5 inline-flex">
+          <span class="loading-dot">.</span>
+          <span class="loading-dot">.</span>
+          <span class="loading-dot">.</span>
+        </span>
+      </span>
     </span>
 
     <span
@@ -26,3 +33,37 @@
   </div>
 </template>
 <script lang="ts" setup></script>
+
+<style scoped>
+.loading-dot {
+  animation: dotPulse 1.2s infinite;
+  opacity: 0.2;
+  transform: translateY(1px);
+}
+
+.loading-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes dotPulse {
+  0%,
+  20% {
+    opacity: 0.2;
+    transform: translateY(1px);
+  }
+
+  40% {
+    opacity: 1;
+    transform: translateY(-1px);
+  }
+
+  100% {
+    opacity: 0.2;
+    transform: translateY(1px);
+  }
+}
+</style>
