@@ -69,8 +69,7 @@ const applicationsList: Application[] = [
     imageClass: "object-contain scale-150",
     project: {
       title: "Mealio",
-      description:
-        "Food ordering experience with personalized recommendations.",
+      description: "",
       problem:
         "Users struggle to find healthy and diverse meal options that fit their dietary preferences.",
       goal: "To create a user-friendly platform that simplifies the process of discovering and ordering nutritious meals.",
@@ -87,32 +86,9 @@ const applicationsList: Application[] = [
       imageUrl: "/Mealio.png",
     },
   },
+
   {
-    label: "Studybuddy",
-    imageUrl: "/StudyBuddy.png",
-    imageClass: "object-contain scale-150",
-    project: {
-      title: "Studybuddy",
-      description:
-        "Collaborative study planner with reminders and progress tracking.",
-      problem:
-        "Students often struggle with managing their study schedules and tracking their progress effectively.",
-      goal: "To create a user-friendly platform that helps students organize their study time and monitor their academic progress.",
-      status: "In construction",
-      techStack: ["Vue", "Pinia", "TypeScript", "Tailwind"],
-      links: [
-        { label: "Case Study", url: "https://example.com/studybuddy" },
-        { label: "GitHub", url: "https://github.com" },
-      ],
-      screenshots: [
-        "https://picsum.photos/seed/studybuddy-shot-1/800/500",
-        "https://picsum.photos/seed/studybuddy-shot-2/800/500",
-      ],
-      imageUrl: "/StudyBuddy.png",
-    },
-  },
-  {
-    label: "NotETS",
+    label: "notETS",
     imageUrl: "/notETS.png",
     imageClass: "object-contain scale-200",
     project: {
@@ -133,30 +109,6 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/studybuddy-shot-2/800/500",
       ],
       imageUrl: "/notETS.png",
-    },
-  },
-  {
-    label: "Stockly",
-    imageUrl: "/stockly.png",
-    imageClass: "object-contain scale-150",
-    project: {
-      title: "Stockly",
-      description:
-        "Started selling unused items on facebook marketplace and to my surprise, I was able to make a decent profit. This experience made me realize the potential of online marketplaces for buying and selling items. I didn't want to keep track of everything manually on a excel sheet, so I decided to use my web development skills to create a web app that would help me manage my inventory and sales more efficiently. and hence, Stockly was born.",
-      problem:
-        "Students often struggle with managing their study schedules and tracking their progress effectively.",
-      goal: "To create a user-friendly platform that helps students organize their study time and monitor their academic progress.",
-      status: "In construction",
-      techStack: ["Vue", "TypeScript", "Tailwind", "Supabase"],
-      links: [
-        { label: "Live App", url: "https://example.com/stockly" },
-        { label: "GitHub", url: "https://github.com" },
-      ],
-      screenshots: [
-        "https://picsum.photos/seed/stockly-shot-1/800/500",
-        "https://picsum.photos/seed/stockly-shot-2/800/500",
-      ],
-      imageUrl: "/stockly.png",
     },
   },
   {
@@ -186,11 +138,35 @@ const applicationsList: Application[] = [
     },
   },
   {
+    label: "Stockly",
+    imageUrl: "/stockly.png",
+    imageClass: "object-contain scale-150",
+    project: {
+      title: "Stockly",
+      description:
+        "Started selling unused items on facebook marketplace and to my surprise, I was able to make a decent profit. This experience made me realize the potential of online marketplaces for buying and selling items. I didn't want to keep track of everything manually on a excel sheet, so I decided to use my web development skills to create a web app that would help me manage my inventory and sales more efficiently. and hence, Stockly was born.",
+      problem:
+        "Students often struggle with managing their study schedules and tracking their progress effectively.",
+      goal: "To create a user-friendly platform that helps students organize their study time and monitor their academic progress.",
+      status: "In construction",
+      techStack: ["Vue", "TypeScript", "Tailwind", "Supabase"],
+      links: [
+        { label: "Live App", url: "https://example.com/stockly" },
+        { label: "GitHub", url: "https://github.com" },
+      ],
+      screenshots: [
+        "https://picsum.photos/seed/stockly-shot-1/800/500",
+        "https://picsum.photos/seed/stockly-shot-2/800/500",
+      ],
+      imageUrl: "/stockly.png",
+    },
+  },
+  {
     label: "AL-V1",
     imageUrl: "/AL.png",
     imageClass: "object-contain scale-down-50",
     project: {
-      title: "Andy Luong V1",
+      title: "Andy Luong Version 1",
       description:
         "Collaborative study planner with reminders and progress tracking.",
       problem:
