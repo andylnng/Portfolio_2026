@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative bg-black/30 backdrop-blur-3xl border border-white/10 p-6 rounded-2xl w-full"
+    class="relative bg-white/10 backdrop-blur-3xl border border-white/10 p-6 rounded-2xl w-full"
   >
     <div class="inline-flex items-center gap-2 mb-4">
       <span class="relative flex h-2.5 w-2.5">
@@ -11,7 +11,7 @@
           class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400"
         />
       </span>
-      <span class="text-xs font-light tracking-wide text-white"
+      <span class="text-sm font-light tracking-wide text-white"
         >Available for internship · Fall 2026</span
       >
     </div>

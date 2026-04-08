@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex h-60 w-full flex-col rounded-2xl border border-white/10 bg-black/30 p-5 backdrop-blur-3xl"
+    class="flex h-60 w-full flex-col rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-3xl"
   >
-    <div class="mb-4 inline-flex items-center gap-2 py-1.5">
-      <Github class="h-8 w-8 text-white" />
-      <span class="text-white/90">Latest commit</span>
+    <div class="mb-3 text-white inline-flex items-center">
+      <Github class="h-6 w-6" />
+      <span class="text-md">Latest commit</span>
     </div>
 
     <p class="text-xs text-white/70">{{ owner }}/{{ repo }}</p>

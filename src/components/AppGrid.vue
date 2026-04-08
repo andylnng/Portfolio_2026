@@ -92,7 +92,7 @@ const applicationsList: Application[] = [
     imageUrl: "/notETS.png",
     imageClass: "object-contain scale-200",
     project: {
-      title: "NotETS",
+      title: "notETS",
       description:
         "Inspired by a classmate known for her exceptional note-taking, I joked about creating a platform where students could access her notes and even donate by buying her a coffee. As I started building the project, more ideas surfaced, and I realized the potential to expand. Instead of limiting it to just one person, why not have the whole school able to contribute by sharing their own notes?",
       problem:

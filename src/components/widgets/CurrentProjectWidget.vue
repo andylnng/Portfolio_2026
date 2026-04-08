@@ -16,7 +16,7 @@
         />
       </span>
       <span class="inline-flex items-end">
-        Coding
+        Currently coding
         <span class="ml-0.5 inline-flex">
           <span class="loading-dot">.</span>
           <span class="loading-dot">.</span>
@@ -25,9 +25,7 @@
       </span>
     </span>
 
-    <span
-      class="pointer-events-none absolute inset-x-0 bottom-4 text-center text-base font-semibold tracking-wide text-gray-800 opacity-0 translate-y-2 transition duration-200 group-hover:translate-y-0 group-hover:opacity-100"
-    >
+    <span class="absolute inset-x-0 bottom-4 text-center text-base">
       notETS
     </span>
   </div>
