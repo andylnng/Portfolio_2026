@@ -15,7 +15,7 @@
       />
 
       <section
-        class="absolute inset-0 h-screen w-screen border border-white/10 bg-white backdrop-blur-2xl"
+        class="absolute inset-0 h-screen w-screen bg-white backdrop-blur-2xl"
       >
         <TitleBar
           header-class="flex items-center gap-3 border-b border-white/10 bg-black/8 px-4 py-3"
@@ -35,27 +35,27 @@
                 class="object-contain rounded-2xl"
               />
             </div>
-            <p class="text-xs uppercase tracking-wide text-black/60">Status</p>
+            <p class="text-md uppercase tracking-wide text-black/60">Status</p>
             <div class="mt-2 mb-6 flex flex-col gap-2">
-              <span class="text-sm">
+              <span class="text-md">
                 {{ project.status }}
               </span>
             </div>
 
-            <p class="text-xs uppercase tracking-wide text-black/60">
+            <p class="text-md uppercase tracking-wide text-black/60">
               Tech Stack
             </p>
             <div class="mt-2 mb-6 flex flex-col gap-2">
               <span
                 v-for="tech in project.techStack"
                 :key="tech"
-                class="text-sm"
+                class="text-md"
               >
                 {{ tech }}
               </span>
             </div>
 
-            <p class="text-xs uppercase tracking-wide text-black/60">Links</p>
+            <p class="text-md uppercase tracking-wide text-black/60">Links</p>
             <div class="mt-2 flex flex-col gap-2 text-sm">
               <a
                 v-for="link in project.links"
@@ -70,17 +70,19 @@
             </div>
           </aside>
 
-          <main class="overflow-y-auto min-h-0 p-6 text-black/90">
-            <h1 class="text-4xl mb-6 font-semibold">Project Brief</h1>
+          <main class="overflow-y-auto min-h-0 p-6 text-black/65">
+            <h1 class="text-black text-4xl mb-6 font-semibold">
+              Project Brief
+            </h1>
             <div class="space-y-6">
               <p class="text-xl leading-relaxed">
                 {{ project.description }}
               </p>
-              <h1 class="text-2xl font-semibold">Problem</h1>
+              <h1 class="text-black text-2xl font-semibold">Problem</h1>
               <p class="text-xl leading-relaxed">
                 {{ project.problem }}
               </p>
-              <h1 class="text-2xl font-semibold">Goal</h1>
+              <h1 class="text-black text-2xl font-semibold">Goal</h1>
               <p class="text-xl leading-relaxed">
                 {{ project.goal }}
               </p>
