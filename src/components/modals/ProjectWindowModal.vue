@@ -71,17 +71,17 @@
           </aside>
 
           <main class="overflow-y-auto min-h-0 p-6 text-black/90">
-            <h1 class="text-4xl mb-6 font-semibold">{{ project.title }}</h1>
+            <h1 class="text-4xl mb-6 font-semibold">Project Brief</h1>
             <div class="space-y-6">
-              <p class="text-md leading-relaxed">
+              <p class="text-xl leading-relaxed">
                 {{ project.description }}
               </p>
-              <h1 class="text-xl font-semibold">Problem</h1>
-              <p class="text-md leading-relaxed">
+              <h1 class="text-2xl font-semibold">Problem</h1>
+              <p class="text-xl leading-relaxed">
                 {{ project.problem }}
               </p>
-              <h1 class="text-xl font-semibold">Goal</h1>
-              <p class="text-md leading-relaxed">
+              <h1 class="text-2xl font-semibold">Goal</h1>
+              <p class="text-xl leading-relaxed">
                 {{ project.goal }}
               </p>
             </div>
