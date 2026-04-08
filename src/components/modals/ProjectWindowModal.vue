@@ -15,19 +15,19 @@
       />
 
       <section
-        class="absolute inset-0 h-screen w-screen border border-white/10 bg-black/90 backdrop-blur-2xl"
+        class="absolute inset-0 h-screen w-screen border border-white/10 bg-white backdrop-blur-2xl"
       >
         <TitleBar
-          header-class="flex items-center gap-3 border-b border-white/10 bg-white/8 px-4 py-3"
+          header-class="flex items-center gap-3 border-b border-white/10 bg-black/8 px-4 py-3"
           @close="emit('close')"
         />
 
         <div class="grid h-[calc(100%-56px)] min-h-0 md:grid-cols-[260px_1fr]">
           <aside
-            class="border-r border-white/10 p-6 text-white/90 overflow-auto min-h-0 flex flex-col"
+            class="border-r border-black/10 p-6 text-black/90 overflow-auto min-h-0 flex flex-col"
           >
             <div
-              class="shrink-0 mb-6 flex items-center justify-center rounded-lg bg-white/5"
+              class="shrink-0 mb-6 flex items-center justify-center rounded-lg bg-black/5"
             >
               <img
                 :src="project.imageUrl"
@@ -35,14 +35,14 @@
                 class="object-contain rounded-2xl"
               />
             </div>
-            <p class="text-xs uppercase tracking-wide text-white/60">Status</p>
+            <p class="text-xs uppercase tracking-wide text-black/60">Status</p>
             <div class="mt-2 mb-6 flex flex-col gap-2">
               <span class="text-sm">
                 {{ project.status }}
               </span>
             </div>
 
-            <p class="text-xs uppercase tracking-wide text-white/60">
+            <p class="text-xs uppercase tracking-wide text-black/60">
               Tech Stack
             </p>
             <div class="mt-2 mb-6 flex flex-col gap-2">
@@ -55,7 +55,7 @@
               </span>
             </div>
 
-            <p class="text-xs uppercase tracking-wide text-white/60">Links</p>
+            <p class="text-xs uppercase tracking-wide text-black/60">Links</p>
             <div class="mt-2 flex flex-col gap-2 text-sm">
               <a
                 v-for="link in project.links"
@@ -63,14 +63,14 @@
                 :href="link.url"
                 target="_blank"
                 rel="noreferrer"
-                class="text-white underline underline-offset-4 hover:text-white/80"
+                class="text-black underline underline-offset-4 hover:text-white/80"
               >
                 {{ link.label }}
               </a>
             </div>
           </aside>
 
-          <main class="overflow-y-auto min-h-0 p-6 text-white/90">
+          <main class="overflow-y-auto min-h-0 p-6 text-black/90">
             <h1 class="text-4xl mb-6 font-semibold">{{ project.title }}</h1>
             <div class="space-y-6">
               <p class="text-md leading-relaxed">

@@ -18,7 +18,7 @@ withDefaults(
   }>(),
   {
     headerClass:
-      "flex items-center rounded-t-xl gap-3 border-b border-white/10 bg-white/8 px-4 py-3",
+      "flex items-center rounded-t-xl gap-3 border-b border-white/10 bg-black/8 px-4 py-3",
   },
 );
 
