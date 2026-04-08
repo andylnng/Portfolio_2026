@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative bg-white/10 backdrop-blur-3xl border border-white/10 p-6 rounded-2xl w-full"
+    class="relative bg-black/20 backdrop-blur-3xl border border-white/10 p-6 rounded-2xl w-full"
   >
     <div class="inline-flex items-center gap-2 mb-4">
       <span class="relative flex h-2.5 w-2.5">

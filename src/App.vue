@@ -110,10 +110,18 @@ onUnmounted(() => {
 
 <style scoped>
 .app-background {
-  background-image: url("/martin-martz-W0NRebXbsjM-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(
+    135deg,
+    #d0415e 0%,
+    #d0415e 20%,
+    #d65767 calc(20% + 1px),
+    #d65767 40%,
+    #db7971 calc(40% + 1px),
+    #db7971 60%,
+    #e0a57c calc(60% + 1px),
+    #e0a57c 80%,
+    #e6d886 calc(80% + 1px) 100%
+  );
 }
 
 .fade-up-enter-active,

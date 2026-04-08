@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex h-60 w-full flex-col rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-3xl"
+    class="flex h-60 w-full flex-col rounded-2xl border border-white/10 bg-black/20 p-5 backdrop-blur-3xl"
   >
     <div class="mb-3 text-white inline-flex items-center">
       <Github class="h-6 w-6" />
