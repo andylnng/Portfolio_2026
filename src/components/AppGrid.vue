@@ -46,6 +46,12 @@ const activeProject = ref<ProjectData | null>(null);
 const openProjectWindow = (app: Application, event: MouseEvent) => {
   if (app.externalUrl) {
     event.preventDefault();
+
+    if (app.externalUrl.startsWith("mailto:")) {
+      window.location.href = app.externalUrl;
+      return;
+    }
+
     window.open(app.externalUrl, "_blank", "noopener,noreferrer");
     return;
   }
@@ -113,6 +119,30 @@ const applicationsList: Application[] = [
     },
   },
   {
+    label: "StudyBuddy",
+    imageUrl: "/StudyBuddy.png",
+    imageClass: "object-contain scale-150",
+    project: {
+      title: "Study Buddy",
+      description:
+        "Started selling unused items on facebook marketplace and to my surprise, I was able to make a decent profit. This experience made me realize the potential of online marketplaces for buying and selling items. I didn't want to keep track of everything manually on a excel sheet, so I decided to use my web development skills to create a web app that would help me manage my inventory and sales more efficiently. and hence, Stockly was born.",
+      problem:
+        "Students often struggle with managing their study schedules and tracking their progress effectively.",
+      goal: "To create a user-friendly platform that helps students organize their study time and monitor their academic progress.",
+      status: "In construction",
+      techStack: ["Vue", "TypeScript", "Tailwind", "Supabase"],
+      links: [
+        { label: "Live App", url: "https://example.com/stockly" },
+        { label: "GitHub", url: "https://github.com" },
+      ],
+      screenshots: [
+        "https://picsum.photos/seed/stockly-shot-1/800/500",
+        "https://picsum.photos/seed/stockly-shot-2/800/500",
+      ],
+      imageUrl: "/StudyBuddy.png",
+    },
+  },
+  {
     label: "Brainwave",
     imageUrl: "/brainwave.png",
     imageClass: "object-contain scale-down-50",
@@ -136,30 +166,6 @@ const applicationsList: Application[] = [
         "https://picsum.photos/seed/studybuddy-shot-2/800/500",
       ],
       imageUrl: "/brainwave.png",
-    },
-  },
-  {
-    label: "Stockly",
-    imageUrl: "/stockly.png",
-    imageClass: "object-contain scale-150",
-    project: {
-      title: "Stockly",
-      description:
-        "Started selling unused items on facebook marketplace and to my surprise, I was able to make a decent profit. This experience made me realize the potential of online marketplaces for buying and selling items. I didn't want to keep track of everything manually on a excel sheet, so I decided to use my web development skills to create a web app that would help me manage my inventory and sales more efficiently. and hence, Stockly was born.",
-      problem:
-        "Students often struggle with managing their study schedules and tracking their progress effectively.",
-      goal: "To create a user-friendly platform that helps students organize their study time and monitor their academic progress.",
-      status: "In construction",
-      techStack: ["Vue", "TypeScript", "Tailwind", "Supabase"],
-      links: [
-        { label: "Live App", url: "https://example.com/stockly" },
-        { label: "GitHub", url: "https://github.com" },
-      ],
-      screenshots: [
-        "https://picsum.photos/seed/stockly-shot-1/800/500",
-        "https://picsum.photos/seed/stockly-shot-2/800/500",
-      ],
-      imageUrl: "/stockly.png",
     },
   },
   {
@@ -187,14 +193,20 @@ const applicationsList: Application[] = [
     },
   },
   {
+    label: "Mail",
+    imageUrl: "/apple-mail.svg",
+    imageClass: "object-contain scale-105",
+    externalUrl: "mailto:andy.luong.1@ens.etsmtl.ca",
+  },
+  {
     label: "Resume EN",
-    imageUrl: "/resume.png",
+    imageUrl: "/folder.png",
     imageClass: "object-contain scale-110",
     externalUrl: "/CV_2026_EN.pdf",
   },
   {
     label: "Resume FR",
-    imageUrl: "/resume.png",
+    imageUrl: "/folder.png",
     imageClass: "object-contain scale-110",
     externalUrl: "/CV_2026_EN.pdf",
   },
