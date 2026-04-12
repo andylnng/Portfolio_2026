@@ -21,19 +21,26 @@
     <div class="text-white/90">
       <p class="mb-4">
         Third year Software engineering student at
-        <label class="text-white font-semibold">ÉTS</label> based in Montreal
-        who builds things outside the classroom web apps, tools, and interfaces
-        where design and code meet. Previously interned at
-        <label class="text-white font-semibold">Safran Landing Systems</label>
+        <a
+          class="text-white font-semibold underline"
+          href="https://www.etsmtl.ca"
+          target="_blank"
+          >ÉTS</a
+        >
+        based in Montreal who builds things outside the classroom web apps,
+        tools, and interfaces where design and code meet. Previously interned at
+        <a
+          class="text-white font-semibold underline"
+          href="https://www.safran-group.com/"
+          target="_blank"
+          >Safran Landing Systems</a
+        >
         2025.
       </p>
       <p class="mb-2 text-md">
         Currently working on
-        <a
-          href="https://notets.app"
-          target="_blank"
-          class="text-white font-semibold"
-          >notETS</a
+        <label target="_blank" class="text-white font-semibold underline"
+          >notETS</label
         >
         a platform for students to share their course notes and possibly making
         money from it.
