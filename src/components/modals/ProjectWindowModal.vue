@@ -35,14 +35,26 @@
                 class="object-contain rounded-2xl"
               />
             </div>
-            <p class="text-md uppercase tracking-wide text-black/60">Status</p>
+            <p class="text-md uppercase tracking-wide text-black font-semibold">
+              Status
+            </p>
             <div class="mt-2 mb-6 flex flex-col gap-2">
-              <span class="text-md">
+              <span class="inline-flex items-center gap-2 text-md">
+                <span class="relative flex h-2.5 w-2.5">
+                  <span
+                    class="absolute inline-flex h-full w-full rounded-full animate-ping"
+                    :class="getStatusPingClass(project.status)"
+                  />
+                  <span
+                    class="relative inline-flex h-2.5 w-2.5 rounded-full"
+                    :class="getStatusPingClass(project.status)"
+                  />
+                </span>
                 {{ project.status }}
               </span>
             </div>
 
-            <p class="text-md uppercase tracking-wide text-black/60">
+            <p class="text-md uppercase tracking-wide text-black font-semibold">
               Tech Stack
             </p>
             <div class="mt-2 mb-6 flex flex-col gap-2">
@@ -55,7 +67,9 @@
               </span>
             </div>
 
-            <p class="text-md uppercase tracking-wide text-black/60">Links</p>
+            <p class="text-md uppercase tracking-wide text-black font-semibold">
+              Links
+            </p>
             <div class="mt-2 flex flex-col gap-2 text-sm">
               <a
                 v-for="link in project.links"
@@ -70,20 +84,20 @@
             </div>
           </aside>
 
-          <main class="overflow-y-auto min-h-0 p-6 text-black/65">
-            <h1 class="text-black text-4xl mb-6 font-semibold">
+          <main class="overflow-y-auto min-h-0 p-6 text-black/80">
+            <h1 class="text-black text-3xl mb-6 font-semibold">
               Project Brief
             </h1>
             <div class="space-y-6">
-              <p class="text-xl leading-relaxed">
+              <p class="text-lg leading-relaxed">
                 {{ project.description }}
               </p>
-              <h1 class="text-black text-2xl font-semibold">Problem</h1>
-              <p class="text-xl leading-relaxed">
+              <h1 class="text-black text-xl font-semibold">Problem</h1>
+              <p class="text-lg leading-relaxed">
                 {{ project.problem }}
               </p>
-              <h1 class="text-black text-2xl font-semibold">Goal</h1>
-              <p class="text-xl leading-relaxed">
+              <h1 class="text-black text-xl font-semibold">Goal</h1>
+              <p class="text-lg leading-relaxed">
                 {{ project.goal }}
               </p>
             </div>
@@ -122,4 +136,18 @@ defineProps<{
 const emit = defineEmits<{
   close: [];
 }>();
+
+const getStatusPingClass = (status: string): string => {
+  const normalizedStatus = status.toLowerCase();
+
+  if (normalizedStatus.includes("live")) {
+    return "bg-green-500";
+  }
+
+  if (normalizedStatus.includes("construction")) {
+    return "bg-yellow-400";
+  }
+
+  return "bg-gray-400";
+};
 </script>
