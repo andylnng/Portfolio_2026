@@ -69,10 +69,11 @@ const applicationsList: Application[] = [
     imageClass: "object-contain scale-150",
     project: {
       title: "Mealio",
-      description: "",
+      description:
+        "Mealio is an AI-powered weekly meal planner that chats with you to build personalized meal ideas around your budget, preferences, and local grocery deals. It automatically gathers and analyzes current promotions by scraping weekly flyers and store articles to help you plan smarter.",
       problem:
-        "Users struggle to find healthy and diverse meal options that fit their dietary preferences.",
-      goal: "To create a user-friendly platform that simplifies the process of discovering and ordering nutritious meals.",
+        "Many people spend too much time deciding what to cook and often overspend on groceries because they do not have a practical meal plan tied to real weekly deals. Mealio aims to reduce decision fatigue, improve budgeting habits, and make weekly meal planning faster and easier.",
+      goal: "Launch Mealio by summer 2027, then expand with personalized recommendations based on dietary needs, household size, and long-term spending patterns.",
       status: "In construction",
       techStack: ["Vue", "TypeScript", "Tailwind", "Firebase"],
       links: [
