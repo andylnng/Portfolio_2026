@@ -195,8 +195,20 @@ const applicationsList: Application[] = [
   {
     label: "Mail",
     imageUrl: "/apple-mail.svg",
-    imageClass: "object-contain scale-105",
+    imageClass: "object-contain scale-110",
     externalUrl: "mailto:andy.luong.1@ens.etsmtl.ca",
+  },
+  {
+    label: "LinkedIn",
+    imageUrl: "/linkedin.png",
+    imageClass: "object-contain scale-110",
+    externalUrl: "https://linkedin.com/in/andy-luong-ets",
+  },
+  {
+    label: "Github",
+    imageUrl: "/github.svg",
+    imageClass: "object-contain scale-110",
+    externalUrl: "https://github.com/andylnng",
   },
   {
     label: "Resume EN",

@@ -47,7 +47,7 @@
       </p>
     </div>
     <div class="mt-6">
-      <div class="flex space-x-4">
+      <!-- <div class="flex space-x-4">
         <div>
           <a
             href="https://github.com/andylnng"
@@ -76,7 +76,7 @@
           >
           <ArrowUpRight class="inline-block ml-1 mb-1 w-3 h-3 text-gray-300" />
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
