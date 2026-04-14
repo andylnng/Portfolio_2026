@@ -27,8 +27,8 @@
           target="_blank"
           >ÉTS</a
         >
-        based in Montreal who builds things outside the classroom web apps,
-        tools, and interfaces where design and code meet. Previously interned at
+        based in Montreal. I build things outside the classroom web apps, tools,
+        and interfaces where design and code meet. Previously interned at
         <a
           class="text-white font-semibold underline"
           href="https://www.safran-group.com/"

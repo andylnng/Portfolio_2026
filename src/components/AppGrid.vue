@@ -193,6 +193,17 @@ const applicationsList: Application[] = [
     },
   },
   {
+    label: "Experience",
+    imageUrl: "/reminders.svg",
+    imageClass: "object-contain scale-95",
+  },
+  {
+    label: "Skills",
+    imageUrl: "/notes.png",
+    imageClass: "object-contain scale-115",
+    externalUrl: "https://github.com/andylnng",
+  },
+  {
     label: "Mail",
     imageUrl: "/apple-mail.svg",
     imageClass: "object-contain scale-110",
@@ -207,7 +218,7 @@ const applicationsList: Application[] = [
   {
     label: "Github",
     imageUrl: "/github.svg",
-    imageClass: "object-contain scale-110",
+    imageClass: "object-contain scale-120",
     externalUrl: "https://github.com/andylnng",
   },
   {
