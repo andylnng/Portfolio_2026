@@ -36,7 +36,7 @@
         </section>
 
         <section class="md:col-span-5">
-          <SkeletonLoader v-if="loading.grid" variant="grid" :count="10" />
+          <SkeletonLoader v-if="loading.grid" variant="grid" :count="12" />
           <Transition name="fade-right">
             <div v-if="!loading.grid">
               <AppGrid />

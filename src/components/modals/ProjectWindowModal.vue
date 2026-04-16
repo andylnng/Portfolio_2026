@@ -77,7 +77,7 @@
                 :href="link.url"
                 target="_blank"
                 rel="noreferrer"
-                class="text-black underline underline-offset-4 hover:text-white/80"
+                class="text-black underline underline-offset-4"
               >
                 {{ link.label }}
               </a>
@@ -85,22 +85,41 @@
           </aside>
 
           <main class="overflow-y-auto min-h-0 p-6 text-black/80">
-            <h1 class="text-black text-3xl mb-6 font-semibold">
-              Project Brief
+            <div class="flex flex-col border-b border-black/10 space-y-4">
+              <h1 class="text-3xl font-bold text-black mb-1">
+                {{ project.title }}
+              </h1>
+              <h3 class="mb-4">
+                Small description or tagline about the project that gives a
+                brief overview of
+              </h3>
+            </div>
+            <h1 class="text-black text-3xl my-6 font-semibold">
+              project brief
             </h1>
-            <div class="space-y-6">
-              <p class="text-lg leading-relaxed">
+            <div class="space-y-6 border-b border-black/10 pb-8 mb-6">
+              <p class="text-md leading-relaxed">
                 {{ project.description }}
               </p>
-              <h1 class="text-black text-xl font-semibold">Problem</h1>
-              <p class="text-lg leading-relaxed">
-                {{ project.problem }}
-              </p>
-              <h1 class="text-black text-xl font-semibold">Goal</h1>
-              <p class="text-lg leading-relaxed">
-                {{ project.goal }}
-              </p>
+              <div class="grid grid-cols-2 gap-5">
+                <div class="p-4 bg-black/5 border border-black/10 rounded-lg">
+                  <h1 class="text-black text-xl font-semibold mb-2">problem</h1>
+                  <p class="text-md leading-relaxed">
+                    {{ project.problem }}
+                  </p>
+                </div>
+                <div class="p-4 border bg-black/5 border-black/10 rounded-lg">
+                  <h1 class="text-black text-xl font-semibold">goal</h1>
+                  <p class="text-md leading-relaxed">
+                    {{ project.goal }}
+                  </p>
+                </div>
+              </div>
             </div>
+            <h1 class="text-black text-xl font-semibold">Key features</h1>
+            <p class="text-lg leading-relaxed">
+              {{ project.features }}
+            </p>
           </main>
         </div>
       </section>
@@ -126,6 +145,7 @@ export type ProjectData = {
   links: ProjectLink[];
   screenshots: string[];
   imageUrl?: string;
+  features?: string[];
 };
 
 defineProps<{

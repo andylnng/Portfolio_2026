@@ -28,7 +28,6 @@ withDefaults(
   }>(),
   {
     variant: "widget",
-    count: 10,
   },
 );
 </script>
