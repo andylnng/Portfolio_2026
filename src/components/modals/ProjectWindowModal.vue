@@ -66,7 +66,6 @@
                 {{ tech }}
               </span>
             </div>
-
             <p class="text-md uppercase tracking-wide text-black font-semibold">
               Links
             </p>
@@ -85,7 +84,7 @@
           </aside>
 
           <main class="overflow-y-auto min-h-0 p-6 text-black/80">
-            <div class="flex flex-col border-b border-black/10 space-y-4">
+            <div class="flex flex-col space-y-4">
               <h1 class="text-3xl font-bold text-black mb-1">
                 {{ project.title }}
               </h1>
@@ -97,18 +96,18 @@
             <h1 class="text-black text-3xl my-6 font-semibold">
               project brief
             </h1>
-            <div class="space-y-6 border-b border-black/10 pb-8 mb-6">
+            <div class="space-y-6 pb-8 mb-6">
               <p class="text-md leading-relaxed">
                 {{ project.description }}
               </p>
               <div class="grid grid-cols-2 gap-5">
-                <div class="p-4 bg-black/5 border border-black/10 rounded-lg">
+                <div class="p-4 bg-black/8 rounded-lg">
                   <h1 class="text-black text-xl font-semibold mb-2">problem</h1>
                   <p class="text-md leading-relaxed">
                     {{ project.problem }}
                   </p>
                 </div>
-                <div class="p-4 border bg-black/5 border-black/10 rounded-lg">
+                <div class="p-4  bg-black/8 rounded-lg">
                   <h1 class="text-black text-xl font-semibold">goal</h1>
                   <p class="text-md leading-relaxed">
                     {{ project.goal }}

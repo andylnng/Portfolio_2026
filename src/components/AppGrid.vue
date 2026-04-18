@@ -123,7 +123,7 @@ const applicationsList: Application[] = [
     imageUrl: "/StudyBuddy.png",
     imageClass: "object-contain scale-150",
     project: {
-      title: "Study Buddy",
+      title: "StudyBuddy",
       description:
         "Started selling unused items on facebook marketplace and to my surprise, I was able to make a decent profit. This experience made me realize the potential of online marketplaces for buying and selling items. I didn't want to keep track of everything manually on a excel sheet, so I decided to use my web development skills to create a web app that would help me manage my inventory and sales more efficiently. and hence, Stockly was born.",
       problem:
